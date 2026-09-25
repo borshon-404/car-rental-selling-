@@ -1,0 +1,157 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+/// Production database is Postgres (Vercel Postgres, Neon, or Supabase).
+/// Use the non-pooling connection string. Pooled PgBouncer URLs break `prisma db push`.
+
+model User {
+  id                 String   @id @default(cuid())
+  email              String   @unique
+  name               String
+  passwordHash       String
+  role               String   @default("admin")
+  mustChangePassword Boolean  @default(true)
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+}
+
+model Page {
+  id             String    @id @default(cuid())
+  title          String
+  slug           String    @unique
+  status         String    @default("draft")
+  excerpt        String    @default("")
+  body           String    @default("")
+  sections       Section[]
+  seoTitle       String    @default("")
+  seoDescription String    @default("")
+  robots         String    @default("index,follow")
+  canonicalUrl   String    @default("")
+  ogTitle        String    @default("")
+  ogDescription  String    @default("")
+  ogImage        String    @default("")
+  publishedAt    DateTime?
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+}
+
+model Section {
+  id        String   @id @default(cuid())
+  pageId    String
+  page      Page     @relation(fields: [pageId], references: [id], onDelete: Cascade)
+  key       String
+  label     String
+  body      String   @default("")
+  sortOrder Int      @default(0)
+  visible   Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([pageId, sortOrder])
+}
+
+model Post {
+  id             String    @id @default(cuid())
+  title          String
+  slug           String    @unique
+  status         String    @default("draft")
+  excerpt        String    @default("")
+  body           String    @default("")
+  coverImage     String    @default("")
+  authorName     String    @default("")
+  seoTitle       String    @default("")
+  seoDescription String    @default("")
+  robots         String    @default("index,follow")
+  canonicalUrl   String    @default("")
+  ogTitle        String    @default("")
+  ogDescription  String    @default("")
+  ogImage        String    @default("")
+  publishedAt    DateTime?
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+}
+
+model Product {
+  id             String   @id @default(cuid())
+  name           String
+  slug           String   @unique
+  status         String   @default("draft")
+  description    String   @default("")
+  priceCents     Int      @default(0)
+  currency       String   @default("BDT")
+  sku            String   @default("")
+  image          String   @default("")
+  seoTitle       String   @default("")
+  seoDescription String   @default("")
+  robots         String   @default("index,follow")
+  canonicalUrl   String   @default("")
+  ogTitle        String   @default("")
+  ogDescription  String   @default("")
+  ogImage        String   @default("")
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+}
+
+model PortfolioItem {
+  id             String   @id @default(cuid())
+  title          String
+  slug           String   @unique
+  status         String   @default("draft")
+  summary        String   @default("")
+  body           String   @default("")
+  image          String   @default("")
+  client         String   @default("")
+  year           String   @default("")
+  tags           String   @default("")
+  seoTitle       String   @default("")
+  seoDescription String   @default("")
+  robots         String   @default("index,follow")
+  canonicalUrl   String   @default("")
+  ogTitle        String   @default("")
+  ogDescription  String   @default("")
+  ogImage        String   @default("")
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+}
+
+model Media {
+  id        String   @id @default(cuid())
+  filename  String
+  url       String
+  alt       String   @default("")
+  mime      String
+  size      Int
+  width     Int?
+  height    Int?
+  createdAt DateTime @default(now())
+}
+
+model SiteChrome {
+  id         String   @id @default("singleton")
+  headerJson String   @default("{}")
+  footerJson String   @default("{}")
+  updatedAt  DateTime @updatedAt
+}
+
+model Setting {
+  key       String   @id
+  value     String   @default("")
+  updatedAt DateTime @updatedAt
+}
+
+model Revision {
+  id         String   @id @default(cuid())
+  entityType String
+  entityId   String
+  snapshot   String
+  actorEmail String   @default("")
+  createdAt  DateTime @default(now())
+
+  @@index([entityType, entityId])
+}

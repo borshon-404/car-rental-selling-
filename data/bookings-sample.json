@@ -1,0 +1,26 @@
+[
+  {
+    "id": "BD-2401",
+    "name": "Sample — Farhana R.",
+    "car": "Toyota Premio 2019",
+    "when": "12 Apr 2026, 09:00 → 14 Apr 2026, 09:00",
+    "total": "10,500 BDT",
+    "status": "Requested"
+  },
+  {
+    "id": "BD-2402",
+    "name": "Sample — Office shift",
+    "car": "Toyota Hiace 2015",
+    "when": "18 Apr 2026 with driver",
+    "total": "27,000 BDT",
+    "status": "Confirmed"
+  },
+  {
+    "id": "BD-2403",
+    "name": "Sample — Imran K.",
+    "car": "Toyota Axio 2018",
+    "when": "Sale enquiry",
+    "total": "11,00,000 BDT asking",
+    "status": "Desk to call"
+  }
+]

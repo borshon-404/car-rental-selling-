@@ -1,0 +1,28 @@
+name: CMS CI
+
+on:
+  push:
+    paths: ["cms/**"]
+  pull_request:
+    paths: ["cms/**"]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: cms
+    env:
+      DATABASE_URL: file:./dev.db
+      AUTH_SECRET: ci-only-secret-not-for-production-use-32
+      SETTINGS_SECRET: ci-only-settings-secret-not-for-prod-32
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: cms/package-lock.json
+      - run: npm ci
+      - run: npx prisma generate
+      - run: npm run lint

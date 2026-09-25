@@ -1,0 +1,2614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daulat Drive preview — car rental &amp; sales, Daulatpur, Khulna</title>
+<meta name="description" content="Single-file preview of Daulat Drive. Browse hire cars and cars for sale, filter the fleet, and send a reservation request.">
+<meta name="theme-color" content="#0b6efd">
+<meta name="robots" content="index,follow">
+<meta property="og:title" content="Daulat Drive preview — car rental &amp; sales, Daulatpur, Khulna">
+<meta property="og:description" content="Single-file preview of Daulat Drive. Browse hire cars and cars for sale, filter the fleet, and send a reservation request.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_BD">
+<meta property="og:image" content="assets/images/og.jpg">
+<meta property="og:url" content="https://YOUR_DOMAIN/index_preview.html">
+<link rel="canonical" href="https://YOUR_DOMAIN/index_preview.html">
+<!-- REPLACE YOUR_DOMAIN above before launch. Contact: mail@gmail.com · +8801330132141 · Daulatpur, Khulna, Bangladesh -->
+<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/images/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/images/icon-192.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoRental",
+  "name": "Daulat Drive",
+  "description": "Car rental and car sales in Daulatpur, Khulna, Bangladesh.",
+  "url": "https://YOUR_DOMAIN/",
+  "telephone": "+8801330132141",
+  "email": "mail@gmail.com",
+  "image": "https://YOUR_DOMAIN/assets/images/og.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Daulatpur",
+    "addressLocality": "Khulna",
+    "addressRegion": "Khulna Division",
+    "postalCode": "9202",
+    "addressCountry": "BD"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 22.8705,
+    "longitude": 89.5242
+  },
+  "openingHours": "Mo-Su 08:00-21:00",
+  "priceRange": "৳৳",
+  "areaServed": "Khulna",
+  "currenciesAccepted": "BDT"
+}
+</script>
+<style>
+/* Daulat Drive — rental & sales, Daulatpur, Khulna
+   Replace brand colours in :root if needed.
+   Images: assets/images/  |  Form endpoint: assets/js/main.js CONFIG.formspreeEndpoint
+   Contact shown in the header is mail@gmail.com and +8801330132141. */
+
+:root {
+  --blue: #0b6efd;
+  --blue-btn: #0a58ca;
+  --blue-dark: #084298;
+  --blue-soft: #e8f1ff;
+  --navy: #071427;
+  --navy-2: #10284d;
+  --ink: #333333;
+  --muted: #5c6778;
+  --line: #e4e7ee;
+  --bg: #f7f7f7;
+  --white: #ffffff;
+  --orange: #ff6b00;
+  --orange-dark: #c2410c;
+  --orange-ink: #1a1206;
+  --orange-soft: #fff1e6;
+  --ok: #0d7a45;
+  --ok-soft: #e7f6ee;
+  --danger: #b42318;
+  --danger-soft: #fdecea;
+  --shadow: 0 16px 40px rgba(7, 20, 39, 0.08);
+  --shadow-lg: 0 24px 60px rgba(7, 20, 39, 0.14);
+  --radius: 18px;
+  --font-h: "Poppins", "Segoe UI", system-ui, sans-serif;
+  --font-b: "Inter", "Segoe UI", system-ui, sans-serif;
+  --font-bn: "Noto Sans Bengali", "Inter", "Segoe UI", sans-serif;
+  --max: 1180px;
+  --header-h: 74px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--white);
+  font-family: var(--font-b);
+  font-size: 16px;
+  line-height: 1.65;
+  text-rendering: optimizeLegibility;
+}
+html[lang="bn"] body,
+html[lang="bn"] button,
+html[lang="bn"] input,
+html[lang="bn"] select,
+html[lang="bn"] textarea { font-family: var(--font-bn); }
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--blue-dark); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { color: var(--blue); }
+h1, h2, h3, h4 {
+  font-family: var(--font-h);
+  line-height: 1.18;
+  letter-spacing: -0.02em;
+  color: var(--navy);
+  margin: 0 0 0.45em;
+}
+html[lang="bn"] h1,
+html[lang="bn"] h2,
+html[lang="bn"] h3 { font-family: var(--font-bn); letter-spacing: 0; }
+h1 { font-size: clamp(1.9rem, 4.4vw, 3.45rem); font-weight: 700; }
+h2 { font-size: clamp(1.55rem, 2.6vw, 2.25rem); font-weight: 700; }
+h3 { font-size: 1.15rem; font-weight: 600; }
+p { margin: 0 0 0.85em; }
+ul { margin: 0; padding: 0; }
+button, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; }
+
+:focus-visible {
+  outline: 3px solid var(--orange);
+  outline-offset: 2px;
+}
+::selection { background: #cfe0ff; }
+
+.skip-link {
+  position: absolute;
+  left: 12px;
+  top: -40px;
+  background: var(--navy);
+  color: #fff;
+  padding: 8px 12px;
+  z-index: 100;
+  border-radius: 8px;
+}
+.skip-link:focus { top: 12px; color: #fff; }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.container { width: min(var(--max), calc(100% - 32px)); margin-inline: auto; }
+.container-wide { width: min(1240px, calc(100% - 32px)); margin-inline: auto; }
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--orange-dark);
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.lede { color: var(--muted); font-size: 1.05rem; max-width: 62ch; }
+.section { padding: 72px 0; }
+.section--bg { background: var(--bg); }
+.section-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: end;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+.section-head p { margin: 0; color: var(--muted); max-width: 52ch; }
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 0 18px;
+  border-radius: 999px;
+  border: 2px solid transparent;
+  font-weight: 650;
+  font-weight: 600;
+  text-decoration: none;
+  line-height: 1;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+}
+.btn:hover { text-decoration: none; transform: translateY(-1px); }
+.btn-primary { background: var(--blue-btn); color: #fff; }
+.btn-primary:hover { background: var(--blue-dark); color: #fff; }
+.btn-accent { background: var(--orange); color: var(--orange-ink); }
+.btn-accent:hover { background: #e25f00; color: var(--orange-ink); }
+.btn-ghost { background: transparent; color: #fff; border-color: rgba(255,255,255,0.55); }
+.btn-ghost:hover { background: #fff; color: var(--navy); }
+.btn-outline { background: #fff; color: var(--navy); border-color: #d5dbe3; }
+.btn-outline:hover { border-color: var(--blue); color: var(--blue-dark); }
+.btn-dark { background: var(--navy); color: #fff; }
+.btn-dark:hover { background: var(--navy-2); color: #fff; }
+.btn[disabled], .btn.is-disabled {
+  opacity: 0.55;
+  pointer-events: none;
+  transform: none;
+}
+.btn-sm { min-height: 40px; padding: 0 14px; font-size: 0.92rem; }
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 26px;
+  padding: 0 9px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.badge--ok { background: var(--ok-soft); color: var(--ok); }
+.badge--no { background: var(--danger-soft); color: var(--danger); }
+.badge--rent { background: var(--blue-soft); color: var(--blue-dark); }
+.badge--sale { background: var(--orange-soft); color: var(--orange-dark); }
+.badge--lux { background: #f3e8ff; color: #6b21a8; }
+
+/* Top bar + header */
+.topbar {
+  background: var(--navy);
+  color: #d5deea;
+  font-size: 0.86rem;
+}
+.topbar-inner {
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 12px;
+  flex-wrap: wrap;
+  padding: 4px 0;
+}
+.topbar a { color: #fff; text-decoration: none; }
+.topbar a:hover { color: var(--orange); }
+.topbar-links, .lang-switch { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.topbar .dot { opacity: 0.4; }
+.lang-switch button {
+  background: transparent;
+  border: 0;
+  color: #c9d4e4;
+  padding: 4px 2px;
+  min-height: 32px;
+}
+.lang-switch button[aria-pressed="true"] { color: #fff; font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
+
+.site-head { position: sticky; top: 0; z-index: 50; }
+.header {
+  background: rgba(255,255,255,0.96);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid transparent;
+}
+.site-head.is-stuck .header { border-bottom-color: var(--line); box-shadow: 0 8px 24px rgba(7,20,39,0.05); }
+.header-inner {
+  min-height: var(--header-h);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  position: relative;
+}
+.logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--navy); }
+.logo:hover { color: var(--navy); }
+.logo__mark {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: var(--blue);
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+}
+.logo__text { display: flex; flex-direction: column; line-height: 1.1; }
+.logo__text strong { font-family: var(--font-h); font-size: 1.05rem; letter-spacing: -0.03em; }
+.logo__text small { color: var(--muted); font-size: 0.72rem; font-weight: 600; }
+
+.site-nav { display: flex; align-items: center; gap: 4px; }
+.site-nav a {
+  color: var(--navy);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+.site-nav a:hover { background: var(--bg); color: var(--blue-dark); }
+.site-nav a[aria-current="page"] { color: var(--blue-btn); }
+.site-nav .btn { margin-left: 8px; }
+
+.nav-toggle {
+  display: none;
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: #fff;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.nav-toggle span {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: var(--navy);
+  border-radius: 2px;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  color: #fff;
+  background:
+    linear-gradient(100deg, rgba(7,20,39,0.92) 0%, rgba(7,20,39,0.78) 42%, rgba(7,20,39,0.28) 100%),
+    var(--hero, url("assets/images/hero.jpg")) center/cover no-repeat;
+  min-height: 640px;
+  display: flex;
+  align-items: center;
+  padding: 64px 0 120px;
+}
+.hero h1, .hero p { color: #fff; }
+.hero .lede { color: #e6edf6; max-width: 58ch; }
+.hero-copy { max-width: 720px; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 22px 0 18px; }
+.hero-points { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; list-style: none; }
+.hero-points li {
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 0.86rem;
+}
+
+.search-wrap { margin-top: -78px; position: relative; z-index: 3; }
+.search-card {
+  background: #fff;
+  border-radius: 22px;
+  box-shadow: var(--shadow-lg);
+  padding: 16px;
+  display: grid;
+  gap: 12px;
+  border: 1px solid rgba(255,255,255,0.7);
+}
+.search-card label, .field label, .form-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.search-card input, .search-card select,
+.field input, .field select, .field textarea,
+.form-grid input, .form-grid select, .form-grid textarea,
+.filters input, .filters select {
+  width: 100%;
+  min-height: 48px;
+  border: 1px solid #d5dbe3;
+  border-radius: 12px;
+  padding: 10px 12px;
+  background: #fff;
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 500;
+  color: var(--ink);
+  font-size: 0.98rem;
+}
+textarea { min-height: 120px; resize: vertical; }
+.search-card .btn { width: 100%; }
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 22px;
+}
+.stat {
+  background: var(--bg);
+  border-radius: 16px;
+  padding: 16px;
+}
+.stat strong { display: block; font-family: var(--font-h); font-size: 1.35rem; color: var(--navy); }
+.stat span { color: var(--muted); font-size: 0.9rem; }
+
+/* Cards */
+.card-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: 1fr;
+}
+.car-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.car-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+.car-card__media {
+  position: relative;
+  display: block;
+  aspect-ratio: 16 / 10;
+  background: linear-gradient(#f7f8fa, #eceff3);
+}
+.car-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 10px;
+}
+.car-card__badges {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.car-card__body { padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+.car-card__kicker { margin: 0; color: var(--muted); font-size: 0.82rem; font-weight: 600; }
+.car-card h3 { margin: 0; font-size: 1.2rem; }
+.car-card h3 a { color: var(--navy); text-decoration: none; }
+.car-card h3 a:hover { color: var(--blue-dark); }
+.spec-row { display: flex; flex-wrap: wrap; gap: 6px; list-style: none; }
+.spec-row li {
+  background: var(--bg);
+  border-radius: 999px;
+  padding: 4px 9px;
+  font-size: 0.8rem;
+  color: #3d4756;
+  font-weight: 600;
+}
+.price-row { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; margin-top: auto; flex-wrap: wrap; }
+.price { margin: 0; font-family: var(--font-h); font-weight: 700; color: var(--navy); font-size: 1.15rem; }
+.price small, .sale-note { color: var(--muted); font-weight: 600; font-size: 0.82rem; font-family: var(--font-b); }
+.sale-note { margin: 0; }
+.car-card__actions { display: flex; gap: 8px; }
+.car-card__actions .btn { flex: 1 1 0; min-width: 0; padding-inline: 10px; }
+
+.band-navy {
+  background: var(--navy);
+  color: #e8eef6;
+}
+.band-navy h2, .band-navy h3 { color: #fff; }
+.band-navy .lede, .band-navy .section-head p { color: #c5d0e0; }
+
+/* Why / services / steps */
+.split {
+  display: grid;
+  gap: 28px;
+  align-items: center;
+}
+.split img {
+  width: 100%;
+  border-radius: 22px;
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+}
+.check-list { list-style: none; display: grid; gap: 10px; margin: 16px 0 20px; }
+.check-list li { display: flex; gap: 10px; align-items: flex-start; }
+.check-list svg { flex: 0 0 auto; margin-top: 3px; }
+
+.feature-grid, .service-grid, .step-grid, .quote-grid {
+  display: grid;
+  gap: 16px;
+}
+.feature, .service, .step, .quote {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 18px;
+}
+.band-navy .feature, .band-navy .quote { background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.08); }
+.icon-blob {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  background: var(--blue-soft);
+  margin-bottom: 12px;
+}
+.service h3, .feature h3, .step h3 { margin-bottom: 6px; }
+.step__num {
+  font-family: var(--font-h);
+  color: var(--orange);
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+}
+
+.brand-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+.brand-row span {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-weight: 700;
+  color: var(--navy);
+  background: #fff;
+  font-size: 0.9rem;
+}
+
+.quote { display: flex; flex-direction: column; gap: 12px; }
+.quote p { margin: 0; }
+.quote footer { display: flex; align-items: center; gap: 10px; margin-top: auto; }
+.avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  color: var(--navy);
+  background: var(--orange-soft);
+}
+.quote cite { font-style: normal; font-weight: 700; color: var(--navy); display: block; }
+.quote small { color: var(--muted); }
+.sample-note { font-size: 0.82rem; color: var(--muted); margin-top: 10px; }
+
+.faq-list { display: grid; gap: 10px; }
+details.faq {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 0 16px;
+}
+details.faq summary {
+  cursor: pointer;
+  font-weight: 650;
+  font-weight: 600;
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  list-style: none;
+}
+details.faq summary::-webkit-details-marker { display: none; }
+details.faq summary::after { content: "+"; font-size: 1.3rem; color: var(--blue); font-weight: 500; }
+details.faq[open] summary::after { content: "–"; }
+details.faq p { color: var(--muted); padding-bottom: 14px; }
+
+.cta {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+  background:
+    linear-gradient(100deg, rgba(7,20,39,0.92), rgba(11,110,253,0.72)),
+    url("assets/images/hero.jpg") center/cover no-repeat;
+  color: #fff;
+  padding: 36px 24px;
+  display: grid;
+  gap: 16px;
+}
+.cta h2, .cta p { color: #fff; }
+.cta p { margin: 0; max-width: 60ch; }
+.cta-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+
+/* Footer + call bar */
+.footer { background: var(--navy); color: #c9d4e4; padding: 48px 0 24px; }
+.footer a { color: #fff; text-decoration: none; }
+.footer a:hover { color: var(--orange); }
+.footer h3 { color: #fff; font-size: 1rem; }
+.footer-grid { display: grid; gap: 24px; }
+.footer ul { list-style: none; display: grid; gap: 8px; }
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  margin-top: 28px;
+  padding-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  justify-content: space-between;
+  font-size: 0.86rem;
+}
+.footer-demo { color: #9aabc0; }
+
+.callbar {
+  display: none;
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  z-index: 60;
+  background: #fff;
+  border-top: 1px solid var(--line);
+  padding: 8px;
+  gap: 8px;
+  grid-template-columns: 1.4fr 0.8fr;
+  box-shadow: 0 -8px 24px rgba(7,20,39,0.08);
+}
+.callbar a, .callbar button { width: 100%; }
+
+/* Listing layout */
+.page-hero {
+  background: var(--navy);
+  color: #fff;
+  padding: 42px 0 36px;
+}
+.page-hero h1, .page-hero p { color: #fff; }
+.page-hero p { color: #d5deea; margin: 0; max-width: 62ch; }
+.crumbs { font-size: 0.86rem; margin-bottom: 10px; color: #c5d0e0; }
+.crumbs a { color: #fff; }
+
+.listing-layout {
+  display: grid;
+  gap: 20px;
+  padding: 28px 0 64px;
+}
+.filters {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 16px;
+  display: grid;
+  gap: 12px;
+  align-content: start;
+}
+.filters h2 { font-size: 1.05rem; }
+.range-readout { font-size: 0.85rem; color: var(--muted); font-weight: 600; text-transform: none; letter-spacing: 0; }
+.result-bar {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.result-bar p { margin: 0; color: var(--muted); }
+.empty {
+  border: 1px dashed var(--line);
+  border-radius: 16px;
+  padding: 28px;
+  text-align: center;
+  color: var(--muted);
+  background: #fff;
+}
+
+/* Detail */
+.detail-layout {
+  display: grid;
+  gap: 22px;
+  padding: 28px 0 64px;
+}
+.gallery { background: #f3f4f6; border-radius: 20px; overflow: hidden; border: 1px solid var(--line); }
+.gallery__main {
+  aspect-ratio: 16 / 10;
+  background: linear-gradient(#f7f8fa, #e9edf2);
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.gallery__main img { width: 100%; height: 100%; object-fit: contain; padding: 8px; }
+.gallery__nav {
+  position: absolute;
+  inset: auto 10px 10px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.gallery__nav button, .thumb {
+  border: 0;
+  background: #fff;
+  border-radius: 999px;
+  min-width: 42px;
+  min-height: 42px;
+  box-shadow: var(--shadow);
+}
+.thumbs { display: flex; gap: 8px; padding: 10px; }
+.thumbs button {
+  border: 2px solid transparent;
+  padding: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  width: 92px;
+  height: 64px;
+}
+.thumbs button[aria-current="true"] { border-color: var(--blue); }
+.thumbs img { width: 100%; height: 100%; object-fit: cover; }
+
+.booking-box {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 18px;
+  box-shadow: var(--shadow);
+}
+.booking-box h2 { font-size: 1.25rem; }
+.rate-xl { font-family: var(--font-h); font-size: 1.7rem; font-weight: 700; color: var(--navy); margin: 0; }
+.estimate {
+  background: var(--blue-soft);
+  border-radius: 12px;
+  padding: 12px;
+  margin: 10px 0;
+}
+.estimate strong { color: var(--navy); }
+.form-grid { display: grid; gap: 12px; }
+.help { color: var(--muted); font-size: 0.85rem; margin: 6px 0 0; }
+.error-list { color: var(--danger); background: var(--danger-soft); border-radius: 12px; padding: 10px 12px; margin: 0; }
+.error-list:empty { display: none; }
+.check { display: flex; gap: 8px; align-items: center; text-transform: none; letter-spacing: 0; font-size: 0.95rem; font-weight: 600; color: var(--ink); flex-direction: row; }
+.check input { width: 18px; height: 18px; min-height: 18px; }
+
+.specs { width: 100%; border-collapse: collapse; background: #fff; border-radius: 16px; overflow: hidden; }
+.specs th, .specs td { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--line); }
+.specs th { width: 38%; color: var(--muted); font-weight: 600; background: #fafbfc; }
+.feature-pills { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; }
+.similar-row {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(260px, 320px);
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 8px;
+}
+.similar-row .car-card { scroll-snap-align: start; }
+.feature-pills li { background: var(--bg); border-radius: 999px; padding: 6px 12px; font-weight: 600; font-size: 0.9rem; }
+
+/* Contact */
+.contact-grid { display: grid; gap: 20px; }
+.map-frame {
+  border: 0;
+  width: 100%;
+  min-height: 320px;
+  border-radius: 18px;
+  background: var(--bg);
+}
+.info-card {
+  background: var(--bg);
+  border-radius: 18px;
+  padding: 16px;
+}
+.info-card a { font-weight: 700; }
+
+/* Modal */
+dialog.modal {
+  border: 0;
+  padding: 0;
+  width: min(680px, calc(100% - 24px));
+  border-radius: 22px;
+  box-shadow: var(--shadow-lg);
+  color: var(--ink);
+}
+dialog.modal::backdrop { background: rgba(7, 20, 39, 0.62); }
+.modal__head, .modal__body { padding: 16px 18px; }
+.modal__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid var(--line);
+}
+.modal__head h2 { margin: 0; font-size: 1.2rem; }
+.icon-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.confirm-wrap { min-height: 60vh; display: grid; place-items: center; padding: 40px 0 80px; }
+.confirm-card {
+  width: min(680px, 100%);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 28px 22px;
+  box-shadow: var(--shadow);
+}
+.confirm-card dl { display: grid; grid-template-columns: 140px 1fr; gap: 8px 12px; }
+.confirm-card dt { color: var(--muted); }
+
+/* Admin mockup */
+.admin-wrap { padding: 28px 0 64px; }
+.admin-stats { display: grid; gap: 12px; grid-template-columns: repeat(2, 1fr); margin-bottom: 18px; }
+.admin-stat { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 14px; }
+.table-wrap { overflow-x: auto; background: #fff; border: 1px solid var(--line); border-radius: 16px; }
+table.data { width: 100%; border-collapse: collapse; min-width: 720px; }
+table.data th, table.data td { text-align: left; padding: 12px; border-bottom: 1px solid var(--line); font-size: 0.92rem; }
+table.data th { background: var(--bg); }
+
+.notice {
+  background: #fff8eb;
+  border: 1px solid #f3d7a8;
+  color: #6b4a12;
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-size: 0.9rem;
+}
+
+/* Prose pages */
+.prose { max-width: 76ch; }
+.prose h2 { font-size: 1.35rem; margin-top: 1.4em; }
+.prose ul { padding-left: 1.2em; display: grid; gap: 6px; }
+
+/* Responsive */
+@media (max-width: 767px) {
+  .topbar { font-size: 0.75rem; }
+  .topbar .hide-sm { display: none; }
+  .callbar { display: grid; }
+  body { padding-bottom: 76px; }
+  .hero { min-height: 0; padding: 28px 0 88px; }
+  .hero-points { display: none; }
+  .hero-actions .btn { flex: 1 1 auto; }
+  .section { padding: 52px 0; }
+  .container, .container-wide { width: min(var(--max), calc(100% - 24px)); }
+}
+@media (max-width: 979px) {
+  .nav-toggle { display: inline-flex; }
+  .site-nav {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background: #fff;
+    border-bottom: 1px solid var(--line);
+    padding: 8px 16px 16px;
+    flex-direction: column;
+    align-items: stretch;
+    box-shadow: var(--shadow);
+  }
+  .site-nav.is-open { display: flex; }
+  .site-nav a { padding: 12px 8px; }
+  .site-nav .btn { margin: 8px 0 0; width: 100%; }
+}
+@media (min-width: 640px) {
+  .card-grid { grid-template-columns: repeat(2, 1fr); }
+  .stats { grid-template-columns: repeat(4, 1fr); }
+  .admin-stats { grid-template-columns: repeat(4, 1fr); }
+}
+@media (min-width: 768px) {
+  .search-card { grid-template-columns: 1fr 1fr; padding: 18px; }
+  .search-card .btn { grid-column: 1 / -1; }
+  .feature-grid, .service-grid { grid-template-columns: 1fr 1fr; }
+  .footer-grid { grid-template-columns: 1.4fr 1fr 1fr 1.1fr; }
+  .contact-grid { grid-template-columns: 1fr 1fr; }
+  .split { grid-template-columns: 1.05fr 0.95fr; }
+  .cta { grid-template-columns: 1.4fr auto; align-items: center; padding: 42px; }
+}
+@media (min-width: 1024px) {
+  .search-card { grid-template-columns: 1.3fr 1fr 1fr 1fr auto; align-items: end; }
+  .search-card .btn { grid-column: auto; width: auto; min-width: 140px; }
+  .card-grid.cols-3, .card-grid { grid-template-columns: repeat(3, 1fr); }
+  .listing-layout { grid-template-columns: 280px 1fr; align-items: start; }
+  .filters { position: sticky; top: 96px; }
+  .detail-layout { grid-template-columns: 1.4fr 0.8fr; align-items: start; }
+  .booking-box { position: sticky; top: 96px; }
+  .step-grid, .quote-grid { grid-template-columns: repeat(3, 1fr); }
+  .service-grid { grid-template-columns: repeat(4, 1fr); }
+}
+@media (min-width: 1440px) {
+  :root { --max: 1200px; }
+  .hero { min-height: 700px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+@media print {
+  .site-head, .callbar, .footer, .search-wrap, .hero-actions, .btn { display: none !important; }
+  body { padding: 0; color: #000; }
+  .confirm-card { box-shadow: none; }
+}
+
+</style>
+</head>
+<body data-preview="true">
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="site-head">
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span class="hide-sm">Head office · Daulatpur, Khulna 9202, Bangladesh</span>
+      <div class="topbar-links">
+        <a href="mailto:mail@gmail.com">mail@gmail.com</a>
+        <span class="dot" aria-hidden="true">·</span>
+        <a href="tel:+8801330132141">+8801330132141</a>
+        <span class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang="bn" aria-pressed="false" lang="bn" aria-label="বাংলা">BN</button>
+        </span>
+      </div>
+    </div>
+  </div>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="logo" href="#home">
+        <span class="logo__mark" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 32 32" fill="none"><path d="M5 21c1.4-5 4-7.5 8-7.5h6c4 0 6.6 2.5 8 7.5" stroke="#fff" stroke-width="2" stroke-linecap="round"/><circle cx="11" cy="21" r="2" fill="#ff6b00"/><circle cx="21" cy="21" r="2" fill="#ff6b00"/><path d="M12 13.5h8" stroke="#ff6b00" stroke-width="2" stroke-linecap="round"/></svg></span>
+        <span class="logo__text"><strong>Daulat Drive</strong><small>Rental &amp; Sales · Khulna</small></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Menu</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="#home" data-i18n="nav_home" aria-current="page">Home</a><a href="#fleet" data-i18n="nav_fleet">Fleet</a><a href="#sale" data-i18n="nav_sale">For Sale</a><a href="#about" data-i18n="nav_about">About</a><a href="#faq" data-i18n="nav_faq">FAQ</a><a href="#contact" data-i18n="nav_contact">Contact</a><button class="btn btn-primary" type="button" data-open-booking data-intent="rent" data-i18n="nav_book">Book a Car</button>
+      </nav>
+    </div>
+  </header>
+</div>
+
+<main id="main">
+  <section class="hero" id="home">
+    <div class="container hero-copy">
+      <p class="eyebrow" data-i18n="hero_kicker">Daulatpur yard · Khulna</p>
+      <h1 data-i18n="hero_title">Reliable Car Rental &amp; Sales — Daulatpur, Khulna</h1>
+      <p class="lede" data-i18n="hero_sub">Daily and weekly hires from the Daulatpur yard, plus inspected cars for sale. Rates in BDT. Call to confirm a car is on the lot.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#fleet">Browse the fleet</a>
+        <a class="btn btn-ghost" href="#sale">Cars for sale</a>
+      </div>
+      <ul class="hero-points">
+        <li>From 2,500 BDT/day</li>
+        <li>Asking prices in BDT</li>
+        <li>Head office in Daulatpur</li>
+        <li>No online charge</li>
+      </ul>
+    </div>
+  </section>
+  
+<div class="search-wrap">
+  <form class="container search-card" id="hero-search" action="#fleet" method="get" role="search">
+    <label>Pickup location
+      <select name="location"><option value="Daulatpur, Khulna" selected>Daulatpur, Khulna</option>
+<option value="Sonadanga, Khulna">Sonadanga, Khulna</option>
+<option value="Khalishpur, Khulna">Khalishpur, Khulna</option>
+<option value="Khulna Railway Station">Khulna Railway Station</option>
+<option value="Jashore Airport (delivery, quoted separately)">Jashore Airport (delivery, quoted separately)</option></select>
+    </label>
+    <label>Pickup date<input type="date" name="pickup"></label>
+    <label>Return date<input type="date" name="return"></label>
+    <label>Car type<select name="type"><option value="all">Any type</option>
+<option value="Sedan">Sedan</option>
+<option value="SUV">SUV</option>
+<option value="Hatchback">Hatchback</option>
+<option value="Microbus">Microbus</option>
+<option value="Luxury">Luxury</option></select></label>
+    <button class="btn btn-primary" type="submit" data-i18n="search">Search fleet</button>
+  </form>
+</div>
+
+  <section class="section">
+    <div class="container">
+      <div class="stats">
+        <div class="stat"><strong>8</strong><span>cars on this demo yard</span></div>
+        <div class="stat"><strong>2,500</strong><span>BDT/day from the Swift</span></div>
+        <div class="stat"><strong>8:00–21:00</strong><span>open daily</span></div>
+        <div class="stat"><strong>9202</strong><span>Daulatpur, Khulna</span></div>
+      </div>
+    </div>
+  </section>
+  <section class="section section--bg" id="featured">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">01 — Fleet</p>
+          <h2>Cars you can hire this week</h2>
+          <p>Rates are per day in BDT. A request is not a confirmed booking until the desk calls you.</p>
+        </div>
+        <a class="btn btn-outline" href="#fleet">See all cars</a>
+      </div>
+      <div class="card-grid">
+<article class="car-card" data-id="toyota-premio-2019" data-slug="toyota-premio-2019" data-name="Toyota Premio" data-type="Sedan" data-segment="Executive" data-seats="5" data-transmission="Automatic" data-fuel="Petrol" data-rate="3500" data-sale="1250000" data-status="available" data-year="2019">
+  <a class="car-card__media" href="#car-toyota-premio-2019" data-preview-detail="toyota-premio-2019">
+    <img src="assets/images/cars/toyota-premio-2019-1.jpg" srcset="assets/images/cars/toyota-premio-2019-1-800.jpg 800w, assets/images/cars/toyota-premio-2019-1.jpg 1400w" sizes="(max-width: 700px) 100vw, 380px" alt="2019 Toyota Premio Pearl white sedan for rent and sale in Khulna" width="1408" height="768" loading="eager" fetchpriority="high" data-fallback="https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?auto=format&fit=crop&w=1400&q=80">
+    <span class="car-card__badges"><span class="badge badge--ok">Available</span><span class="badge badge--rent">Rent</span></span>
+  </a>
+  <div class="car-card__body">
+    <p class="car-card__kicker">Sedan · 2019 · Pearl white</p>
+    <h3><a href="#car-toyota-premio-2019" data-preview-detail="toyota-premio-2019">Toyota Premio</a></h3>
+    <ul class="spec-row">
+      <li>5 seats</li>
+      <li>Automatic</li>
+      <li>Petrol</li>
+    </ul>
+    <div class="price-row"><p class="price">3,500 <small>BDT/day</small></p><p class="sale-note">Sale 12,50,000 BDT</p></div>
+    <div class="car-card__actions">
+      <a class="btn btn-primary" href="#car-toyota-premio-2019" data-preview-detail="toyota-premio-2019" data-i18n="view">View Details</a>
+      <button class="btn btn-accent" type="button" data-open-booking data-slug="toyota-premio-2019" data-intent="rent" data-i18n="book">Book</button>
+    </div>
+  </div>
+</article>
+
+
+<article class="car-card" data-id="honda-civic-2020" data-slug="honda-civic-2020" data-name="Honda Civic" data-type="Sedan" data-segment="Sport" data-seats="5" data-transmission="Automatic" data-fuel="Petrol" data-rate="4500" data-sale="2200000" data-status="available" data-year="2020">
+  <a class="car-card__media" href="#car-honda-civic-2020" data-preview-detail="honda-civic-2020">
+    <img src="assets/images/cars/honda-civic-2020-1.jpg" srcset="assets/images/cars/honda-civic-2020-1-800.jpg 800w, assets/images/cars/honda-civic-2020-1.jpg 1400w" sizes="(max-width: 700px) 100vw, 380px" alt="2020 Honda Civic White sedan for rent and sale in Khulna" width="1408" height="768" loading="eager" fetchpriority="high" data-fallback="https://images.unsplash.com/photo-1590362891991-f776e747a588?auto=format&fit=crop&w=1400&q=80">
+    <span class="car-card__badges"><span class="badge badge--ok">Available</span><span class="badge badge--rent">Rent</span></span>
+  </a>
+  <div class="car-card__body">
+    <p class="car-card__kicker">Sedan · 2020 · White</p>
+    <h3><a href="#car-honda-civic-2020" data-preview-detail="honda-civic-2020">Honda Civic</a></h3>
+    <ul class="spec-row">
+      <li>5 seats</li>
+      <li>Automatic</li>
+      <li>Petrol</li>
+    </ul>
+    <div class="price-row"><p class="price">4,500 <small>BDT/day</small></p><p class="sale-note">Sale 22,00,000 BDT</p></div>
+    <div class="car-card__actions">
+      <a class="btn btn-primary" href="#car-honda-civic-2020" data-preview-detail="honda-civic-2020" data-i18n="view">View Details</a>
+      <button class="btn btn-accent" type="button" data-open-booking data-slug="honda-civic-2020" data-intent="rent" data-i18n="book">Book</button>
+    </div>
+  </div>
+</article>
+
+
+<article class="car-card" data-id="pajero-sport-2019" data-slug="pajero-sport-2019" data-name="Mitsubishi Pajero Sport" data-type="SUV" data-segment="Family" data-seats="7" data-transmission="Automatic" data-fuel="Diesel" data-rate="9500" data-sale="3500000" data-status="available" data-year="2019">
+  <a class="car-card__media" href="#car-pajero-sport-2019" data-preview-detail="pajero-sport-2019">
+    <img src="assets/images/cars/pajero-sport-2019-1.jpg" srcset="assets/images/cars/pajero-sport-2019-1-800.jpg 800w, assets/images/cars/pajero-sport-2019-1.jpg 1400w" sizes="(max-width: 700px) 100vw, 380px" alt="2019 Mitsubishi Pajero Sport White suv for rent and sale in Khulna" width="1408" height="768" loading="lazy" data-fallback="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1400&q=80">
+    <span class="car-card__badges"><span class="badge badge--ok">Available</span><span class="badge badge--rent">Rent</span></span>
+  </a>
+  <div class="car-card__body">
+    <p class="car-card__kicker">SUV · 2019 · White</p>
+    <h3><a href="#car-pajero-sport-2019" data-preview-detail="pajero-sport-2019">Mitsubishi Pajero Sport</a></h3>
+    <ul class="spec-row">
+      <li>7 seats</li>
+      <li>Automatic</li>
+      <li>Diesel</li>
+    </ul>
+    <div class="price-row"><p class="price">9,500 <small>BDT/day</small></p><p class="sale-note">Sale 35,00,000 BDT</p></div>
+    <div class="car-card__actions">
+      <a class="btn btn-primary" href="#car-pajero-sport-2019" data-preview-detail="pajero-sport-2019" data-i18n="view">View Details</a>
+      <button class="btn btn-accent" type="button" data-open-booking data-slug="pajero-sport-2019" data-intent="rent" data-i18n="book">Book</button>
+    </div>
+  </div>
+</article>
+
+
+<article class="car-card" data-id="toyota-hiace-2015" data-slug="toyota-hiace-2015" data-name="Toyota Hiace" data-type="Microbus" data-segment="Group" data-seats="12" data-transmission="Manual" data-fuel="Diesel" data-rate="12000" data-sale="2800000" data-status="available" data-year="2015">
+  <a class="car-card__media" href="#car-toyota-hiace-2015" data-preview-detail="toyota-hiace-2015">
+    <img src="assets/images/cars/toyota-hiace-2015-1.jpg" srcset="assets/images/cars/toyota-hiace-2015-1-800.jpg 800w, assets/images/cars/toyota-hiace-2015-1.jpg 1400w" sizes="(max-width: 700px) 100vw, 380px" alt="2015 Toyota Hiace White microbus for rent and sale in Khulna" width="1408" height="768" loading="lazy" data-fallback="https://images.unsplash.com/photo-1527786356703-4b100091cd2c?auto=format&fit=crop&w=1400&q=80">
+    <span class="car-card__badges"><span class="badge badge--ok">Available</span><span class="badge badge--rent">Rent</span></span>
+  </a>
+  <div class="car-card__body">
+    <p class="car-card__kicker">Microbus · 2015 · White</p>
+    <h3><a href="#car-toyota-hiace-2015" data-preview-detail="toyota-hiace-2015">Toyota Hiace</a></h3>
+    <ul class="spec-row">
+      <li>12 seats</li>
+      <li>Manual</li>
+      <li>Diesel</li>
+    </ul>
+    <div class="price-row"><p class="price">12,000 <small>BDT/day</small></p><p class="sale-note">Sale 28,00,000 BDT</p></div>
+    <div class="car-card__actions">
+      <a class="btn btn-primary" href="#car-toyota-hiace-2015" data-preview-detail="toyota-hiace-2015" data-i18n="view">View Details</a>
+      <button class="btn btn-accent" type="button" data-open-booking data-slug="toyota-hiace-2015" data-intent="rent" data-i18n="book">Book</button>
+    </div>
+  </div>
+</article>
+
+
+<article class="car-card" data-id="maruti-swift-2021" data-slug="maruti-swift-2021" data-name="Maruti Suzuki Swift" data-type="Hatchback" data-segment="City" data-seats="5" data-transmission="Manual" data-fuel="Petrol" data-rate="2500" data-sale="900000" data-status="available" data-year="2021">
+  <a class="car-card__media" href="#car-maruti-swift-2021" data-preview-detail="maruti-swift-2021">
+    <img src="assets/images/cars/maruti-swift-2021-1.jpg" srcset="assets/images/cars/maruti-swift-2021-1-800.jpg 800w, assets/images/cars/maruti-swift-2021-1.jpg 1400w" sizes="(max-width: 700px) 100vw, 380px" alt="2021 Maruti Suzuki Swift White hatchback for rent and sale in Khulna" width="1408" height="768" loading="lazy" data-fallback="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=1400&q=80">
+    <span class="car-card__badges"><span class="badge badge--ok">Available</span><span class="badge badge--rent">Rent</span></span>
+  </a>
+  <div class="car-card__body">
+    <p class="car-card__kicker">Hatchback · 2021 · White</p>
+    <h3><a href="#car-maruti-swift-2021" data-preview-detail="maruti-swift-2021">Maruti Suzuki Swift</a></h3>
+    <ul class="spec-row">
+      <li>5 seats</li>
+      <li>Manual</li>
+      <li>Petrol</li>
+    </ul>
+    <div class="price-row"><p class="price">2,500 <small>BDT/day</small></p><p class="sale-note">Sale 9,00,000 BDT</p></div>
+    <div class="car-card__actions">
+      <a class="btn btn-primary" href="#car-maruti-swift-2021" data-preview-detail="maruti-swift-2021" data-i18n="view">View Details</a>
+      <button class="btn btn-accent" type="button" data-open-booking data-slug="maruti-swift-2021" data-intent="rent" data-i18n="book">Book</button>
+    </div>
+  </div>
+</article>
+
+
+<article class="car-card" data-id="bmw-5series-2018" data-slug="bmw-5series-2018" data-name="BMW 5 Series" data-type="Sedan" data-segment="Luxury" data-seats="5" data-transmission="Automatic" data-fuel="Petrol" data-rate="15000" data-sale="5000000" data-status="available" data-year="2018">
+  <a class="car-card__media" href="#car-bmw-5series-2018" data-preview-detail="bmw-5series-2018">
+    <img src="assets/images/cars/bmw-5series-2018-1.jpg" srcset="assets/images/cars/bmw-5series-2018-1-800.jpg 800w, assets/images/cars/bmw-5series-2018-1.jpg 1400w" sizes="(max-width: 700px) 100vw, 380px" alt="2018 BMW 5 Series Mineral white sedan for rent and sale in Khulna" width="1408" height="768" loading="lazy" data-fallback="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1400&q=80">
+    <span class="car-card__badges"><span class="badge badge--ok">Available</span><span class="badge badge--rent">Rent</span><span class="badge badge--lux">Luxury</span></span>
+  </a>
+  <div class="car-card__body">
+    <p class="car-card__kicker">Sedan · 2018 · Mineral white</p>
+    <h3><a href="#car-bmw-5series-2018" data-preview-detail="bmw-5series-2018">BMW 5 Series</a></h3>
+    <ul class="spec-row">
+      <li>5 seats</li>
+      <li>Automatic</li>
+      <li>Petrol</li>
+    </ul>
+    <div class="price-row"><p class="price">15,000 <small>BDT/day</small></p><p class="sale-note">Sale 50,00,000 BDT</p></div>
+    <div class="car-card__actions">
+      <a class="btn btn-primary" href="#car-bmw-5series-2018" data-preview-detail="bmw-5series-2018" data-i18n="view">View Details</a>
+      <button class="btn btn-accent" type="button" data-open-booking data-slug="bmw-5series-2018" data-intent="rent" data-i18n="book">Book</button>
+    </div>
+  </div>
+</article>
+</div>
+    </div>
+  </section>
+  <section class="section band-navy" id="for-sale">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">02 — Sales</p>
+          <h2>Cars for sale, asking prices in BDT</h2>
+          <p>Lakh-style figures, for example 12,50,000 BDT. Inspect the car at the yard before you agree anything.</p>
+        </div>
+        <a class="btn btn-ghost" href="#sale">All cars for sale</a>
+      </div>
+      <div class="card-grid">
+<article class="car-card" data-id="honda-civic-2020" data-slug="honda-civic-2020" data-name="Honda Civic" data-type="Sedan" data-segment="Sport" data-seats="5" data-transmission="Automatic" data-fuel="Petrol" data-rate="4500" data-sale="2200000" data-status="available" data-year="2020">
+  <a class="car-card__media" href="#car-honda-civic-2020" data-preview-detail="honda-civic-2020">
+    <img src="assets/images/cars/honda-civic-2020-1.jpg" srcset="assets/images/cars/honda-civic-2020-1-800.jpg 800w, assets/images/cars/honda-civic-2020-1.jpg 1400w" sizes="(max-width: 700px) 100vw, 380px" alt="2020 Honda Civic White sedan for rent and sale in Khulna" width="1408" height="768" loading="lazy" data-fallback="https://images.unsplash.com/photo-1590362891991-f776e747a588?auto=format&fit=crop&w=1400&q=80">
+    <span class="car-card__badges"><span class="badge badge--sale">For sale</span></span>
+  </a>
+  <div class="car-card__body">
+    <p class="car-card__kicker">Sedan · 2020 · White</p>
+    <h3><a href="#car-honda-civic-2020" data-preview-detail="honda-civic-2020">Honda Civic</a></h3>
+    <ul class="spec-row">
+      <li>5 seats</li>
+      <li>Automatic</li>
+      <li>Petrol</li>
+    </ul>
+    <div class="price-row"><p class="price">22,00,000 <small>BDT</small></p><p class="sale-note">Rent 4,500 BDT/day</p></div>
+    <div class="car-card__actions">
+      <a class="btn btn-primary" href="#car-honda-civic-2020" data-preview-detail="honda-civic-2020" data-i18n="view">View Details</a>
+      <button class="btn btn-accent" type="button" data-open-booking data-slug="honda-civic-2020" data-intent="sale" data-i18n="enquire">Enquire to Buy</button>
+    </div>
+  </div>
+</article>
+
+
+<article class="car-card" data-id="pajero-sport-2019" data-slug="pajero-sport-2019" data-name="Mitsubishi Pajero Sport" data-type="SUV" data-segment="Family" data-seats="7" data-transmission="Automatic" data-fuel="Diesel" data-rate="9500" data-sale="3500000" data-status="available" data-year="2019">
+  <a class="car-card__media" href="#car-pajero-sport-2019" data-preview-detail="pajero-sport-2019">
+    <img src="assets/images/cars/pajero-sport-2019-1.jpg" srcset="assets/images/cars/pajero-sport-2019-1-800.jpg 800w, assets/images/cars/pajero-sport-2019-1.jpg 1400w" sizes="(max-width: 700px) 100vw, 380px" alt="2019 Mitsubishi Pajero Sport White suv for rent and sale in Khulna" width="1408" height="768" loading="lazy" data-fallback="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1400&q=80">
+    <span class="car-card__badges"><span class="badge badge--sale">For sale</span></span>
+  </a>
+  <div class="car-card__body">
+    <p class="car-card__kicker">SUV · 2019 · White</p>
+    <h3><a href="#car-pajero-sport-2019" data-preview-detail="pajero-sport-2019">Mitsubishi Pajero Sport</a></h3>
+    <ul class="spec-row">
+      <li>7 seats</li>
+      <li>Automatic</li>
+      <li>Diesel</li>
+    </ul>
+    <div class="price-row"><p class="price">35,00,000 <small>BDT</small></p><p class="sale-note">Rent 9,500 BDT/day</p></div>
+    <div class="car-card__actions">
+      <a class="btn btn-primary" href="#car-pajero-sport-2019" data-preview-detail="pajero-sport-2019" data-i18n="view">View Details</a>
+      <button class="btn btn-accent" type="button" data-open-booking data-slug="pajero-sport-2019" data-intent="sale" data-i18n="enquire">Enquire to Buy</button>
+    </div>
+  </div>
+</article>
+
+
+<article class="car-card" data-id="toyota-hiace-2015" data-slug="toyota-hiace-2015" data-name="Toyota Hiace" data-type="Microbus" data-segment="Group" data-seats="12" data-transmission="Manual" data-fuel="Diesel" data-rate="12000" data-sale="2800000" data-status="available" data-year="2015">
+  <a class="car-card__media" href="#car-toyota-hiace-2015" data-preview-detail="toyota-hiace-2015">
+    <img src="assets/images/cars/toyota-hiace-2015-1.jpg" srcset="assets/images/cars/toyota-hiace-2015-1-800.jpg 800w, assets/images/cars/toyota-hiace-2015-1.jpg 1400w" sizes="(max-width: 700px) 100vw, 380px" alt="2015 Toyota Hiace White microbus for rent and sale in Khulna" width="1408" height="768" loading="lazy" data-fallback="https://images.unsplash.com/photo-1527786356703-4b100091cd2c?auto=format&fit=crop&w=1400&q=80">
+    <span class="car-card__badges"><span class="badge badge--sale">For sale</span></span>
+  </a>
+  <div class="car-card__body">
+    <p class="car-card__kicker">Microbus · 2015 · White</p>
+    <h3><a href="#car-toyota-hiace-2015" data-preview-detail="toyota-hiace-2015">Toyota Hiace</a></h3>
+    <ul class="spec-row">
+      <li>12 seats</li>
+      <li>Manual</li>
+      <li>Diesel</li>
+    </ul>
+    <div class="price-row"><p class="price">28,00,000 <small>BDT</small></p><p class="sale-note">Rent 12,000 BDT/day</p></div>
+    <div class="car-card__actions">
+      <a class="btn btn-primary" href="#car-toyota-hiace-2015" data-preview-detail="toyota-hiace-2015" data-i18n="view">View Details</a>
+      <button class="btn btn-accent" type="button" data-open-booking data-slug="toyota-hiace-2015" data-intent="sale" data-i18n="enquire">Enquire to Buy</button>
+    </div>
+  </div>
+</article>
+
+
+<article class="car-card" data-id="bmw-5series-2018" data-slug="bmw-5series-2018" data-name="BMW 5 Series" data-type="Sedan" data-segment="Luxury" data-seats="5" data-transmission="Automatic" data-fuel="Petrol" data-rate="15000" data-sale="5000000" data-status="available" data-year="2018">
+  <a class="car-card__media" href="#car-bmw-5series-2018" data-preview-detail="bmw-5series-2018">
+    <img src="assets/images/cars/bmw-5series-2018-1.jpg" srcset="assets/images/cars/bmw-5series-2018-1-800.jpg 800w, assets/images/cars/bmw-5series-2018-1.jpg 1400w" sizes="(max-width: 700px) 100vw, 380px" alt="2018 BMW 5 Series Mineral white sedan for rent and sale in Khulna" width="1408" height="768" loading="lazy" data-fallback="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1400&q=80">
+    <span class="car-card__badges"><span class="badge badge--sale">For sale</span><span class="badge badge--lux">Luxury</span></span>
+  </a>
+  <div class="car-card__body">
+    <p class="car-card__kicker">Sedan · 2018 · Mineral white</p>
+    <h3><a href="#car-bmw-5series-2018" data-preview-detail="bmw-5series-2018">BMW 5 Series</a></h3>
+    <ul class="spec-row">
+      <li>5 seats</li>
+      <li>Automatic</li>
+      <li>Petrol</li>
+    </ul>
+    <div class="price-row"><p class="price">50,00,000 <small>BDT</small></p><p class="sale-note">Rent 15,000 BDT/day</p></div>
+    <div class="car-card__actions">
+      <a class="btn btn-primary" href="#car-bmw-5series-2018" data-preview-detail="bmw-5series-2018" data-i18n="view">View Details</a>
+      <button class="btn btn-accent" type="button" data-open-booking data-slug="bmw-5series-2018" data-intent="sale" data-i18n="enquire">Enquire to Buy</button>
+    </div>
+  </div>
+</article>
+</div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container split">
+      <img src="assets/images/about.jpg" alt="Daulat Drive yard in Daulatpur, Khulna, with sedans and a white microbus" width="1408" height="768" loading="lazy">
+      <div>
+        <p class="eyebrow">Why this desk</p>
+        <h2>A small yard. The car on the page is the car on the lot.</h2>
+        <p>Daulat Drive is the rental and sales counter at Daulatpur, Khulna. You can hire for a day, a week, or a family trip, or ask about buying a car you have already driven.</p>
+        <ul class="check-list">
+          <li><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="9" fill="#e7f6ee"/><path d="M5 9.2 7.6 12 13 6.5" fill="none" stroke="#0d7a45" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Rates shown in BDT before you send a request.</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="9" fill="#e7f6ee"/><path d="M5 9.2 7.6 12 13 6.5" fill="none" stroke="#0d7a45" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Papers available to read at the desk — licence, NID, and a deposit.</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="9" fill="#e7f6ee"/><path d="M5 9.2 7.6 12 13 6.5" fill="none" stroke="#0d7a45" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Self-drive or a driver at 1,500 BDT/day.</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="9" fill="#e7f6ee"/><path d="M5 9.2 7.6 12 13 6.5" fill="none" stroke="#0d7a45" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Head office you can actually visit: Daulatpur, Khulna 9202, Bangladesh.</span></li>
+        </ul>
+        <a class="btn btn-primary" href="#about">About the office</a>
+      </div>
+    </div>
+  </section>
+  <section class="section section--bg">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Services</p>
+          <h2>Flexible hires for Khulna roads</h2>
+        </div>
+      </div>
+      <div class="service-grid">
+        <article class="service"><div class="icon-blob" aria-hidden="true"><span class="logo__mark" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 32 32" fill="none"><path d="M5 21c1.4-5 4-7.5 8-7.5h6c4 0 6.6 2.5 8 7.5" stroke="#fff" stroke-width="2" stroke-linecap="round"/><circle cx="11" cy="21" r="2" fill="#ff6b00"/><circle cx="21" cy="21" r="2" fill="#ff6b00"/><path d="M12 13.5h8" stroke="#ff6b00" stroke-width="2" stroke-linecap="round"/></svg></span></div><h3>City rental</h3><p>Sedans and the Swift for Sonadanga, Khalishpur, and the working day. From 2,500 BDT/day.</p></article>
+        <article class="service"><div class="icon-blob" aria-hidden="true"><span class="logo__mark" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 32 32" fill="none"><path d="M5 21c1.4-5 4-7.5 8-7.5h6c4 0 6.6 2.5 8 7.5" stroke="#fff" stroke-width="2" stroke-linecap="round"/><circle cx="11" cy="21" r="2" fill="#ff6b00"/><circle cx="21" cy="21" r="2" fill="#ff6b00"/><path d="M12 13.5h8" stroke="#ff6b00" stroke-width="2" stroke-linecap="round"/></svg></span></div><h3>Jashore Airport</h3><p>Delivery to the airport is quoted from 2,500 BDT on top of the daily rate. Tell us the flight time.</p></article>
+        <article class="service"><div class="icon-blob" aria-hidden="true"><span class="logo__mark" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 32 32" fill="none"><path d="M5 21c1.4-5 4-7.5 8-7.5h6c4 0 6.6 2.5 8 7.5" stroke="#fff" stroke-width="2" stroke-linecap="round"/><circle cx="11" cy="21" r="2" fill="#ff6b00"/><circle cx="21" cy="21" r="2" fill="#ff6b00"/><path d="M12 13.5h8" stroke="#ff6b00" stroke-width="2" stroke-linecap="round"/></svg></span></div><h3>Weddings &amp; shifts</h3><p>The Hiace takes 12. Add a driver on the form if the group should not self-drive.</p></article>
+        <article class="service"><div class="icon-blob" aria-hidden="true"><span class="logo__mark" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 32 32" fill="none"><path d="M5 21c1.4-5 4-7.5 8-7.5h6c4 0 6.6 2.5 8 7.5" stroke="#fff" stroke-width="2" stroke-linecap="round"/><circle cx="11" cy="21" r="2" fill="#ff6b00"/><circle cx="21" cy="21" r="2" fill="#ff6b00"/><path d="M12 13.5h8" stroke="#ff6b00" stroke-width="2" stroke-linecap="round"/></svg></span></div><h3>Buy from the yard</h3><p>Every hire car also has an asking price. Enquire to buy, then come and see the papers.</p></article>
+      </div>
+      <div class="brand-row" aria-label="Brands on the yard">
+        <span>Toyota</span><span>Honda</span><span>Nissan</span><span>Mitsubishi</span><span>Suzuki</span><span>BMW</span>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="section-head"><div><p class="eyebrow">How it works</p><h2>Three steps, then a phone call</h2></div></div>
+      <div class="step-grid">
+        <article class="step"><p class="step__num">01</p><h3>Choose the car</h3><p>Filter by type, seats, fuel, and the daily rate. Open the page and read the kilometres.</p></article>
+        <article class="step"><p class="step__num">02</p><h3>Send a request</h3><p>Name, phone, dates, and the car. You will see the estimated hire before you submit. Nothing is charged online.</p></article>
+        <article class="step"><p class="step__num">03</p><h3>Pick up in Daulatpur</h3><p>We confirm by phone. Bring your licence and NID. The keys are at Daulatpur, Khulna, Bangladesh.</p></article>
+      </div>
+    </div>
+  </section>
+  <section class="section section--bg">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Testimonials</p>
+          <h2>What clients say</h2>
+        </div>
+      </div>
+      <div class="quote-grid">
+        <figure class="quote"><p>“The Premio was ready when I reached Daulatpur, papers on the counter, and the rate was the rate on the page. No surprise at the gate.”</p><footer><span class="avatar" aria-hidden="true">FR</span><span><cite>Farhana Rahman</cite><small>Sonadanga · sample review</small></span></footer></figure>
+        <figure class="quote"><p>“We took the Hiace for a wedding shift. The driver knew the lane. I would book the microbus again rather than three separate cars.”</p><footer><span class="avatar" aria-hidden="true">NJ</span><span><cite>Nusrat Jahan</cite><small>Khalishpur · sample review</small></span></footer></figure>
+        <figure class="quote"><p>“I hired the Axio for a week, then asked about buying it. They let me read the service notes before we talked price.”</p><footer><span class="avatar" aria-hidden="true">IK</span><span><cite>Imran Kabir</cite><small>Daulatpur · sample review</small></span></footer></figure>
+      </div>
+      <p class="sample-note">Sample stories for the layout. Replace them with your own clients before you publish.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">FAQ</p>
+          <h2>Before you call</h2>
+        </div>
+        <a class="btn btn-outline" href="#faq">All questions</a>
+      </div>
+      <div class="faq-list">
+        <details class="faq"><summary>What do I need to rent a car?</summary><p>A valid Bangladesh driving licence, your NID or passport, and a refundable security deposit agreed at the desk. International visitors should bring a passport and an International Driving Permit if their licence is not in English. We photograph the papers; we do not keep the originals.</p></details><details class="faq"><summary>Is there an age requirement?</summary><p>The named driver must be at least 21. Drivers under 23 may be limited to the Swift, Sunny, and Axio. The BMW is 25 and above, or with a chauffeur.</p></details><details class="faq"><summary>Are there mileage limits?</summary><p>City and Khulna Division hires include 150 km per day. Extra kilometres are charged at the rate written on your reservation slip. Trips outside the division need written approval before you leave.</p></details><details class="faq"><summary>What about fuel, a driver, and airport delivery?</summary><p>Fuel is full-to-full: you return the car as you took it. A driver is 1,500 BDT per day and is added in the booking estimate. Delivery to Jashore Airport starts at 2,500 BDT and is quoted separately — it is not inside the daily rate.</p></details>
+      </div>
+    </div>
+  </section>
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="cta">
+        <div>
+          <h2>Book the car, then we confirm from Daulatpur.</h2>
+          <p>Call +8801330132141 or send a request. Email mail@gmail.com. Head office: Daulatpur, Khulna 9202, Bangladesh.</p>
+        </div>
+        <div class="cta-actions">
+          <button class="btn btn-accent" type="button" data-open-booking>Request a car</button>
+          <a class="btn btn-ghost" href="tel:+8801330132141">Call +8801330132141</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<section id="fleet">
+  <div class="page-hero">
+    <div class="container">
+      <p class="crumbs"><a href="#home">Home</a> / Rental fleet</p>
+      <h1>Rental fleet</h1>
+      <p>Filter by type, seats, transmission, fuel, and daily rate. Reserved cars stay visible so you can ask about the waitlist. Head office: Daulatpur, Khulna 9202, Bangladesh. mail@gmail.com · +8801330132141.</p>
+    </div>
+  </div>
+  <form data-filter-form>
+    <div class="container listing-layout">
+      <aside class="filters" aria-label="Filter cars">
+        <h2>Filter</h2>
+        <label>Search<input type="search" name="q" placeholder="Premio, Hiace, BMW"></label>
+        <label>Type<select name="type"><option value="all">Any type</option>
+<option value="Sedan">Sedan</option>
+<option value="SUV">SUV</option>
+<option value="Hatchback">Hatchback</option>
+<option value="Microbus">Microbus</option>
+<option value="Luxury">Luxury</option></select></label>
+        <label>Seats<select name="seats"><option value="all">Any</option><option value="5">5 seats</option><option value="7">7 seats</option><option value="12">12 seats</option></select></label>
+        <label>Transmission<select name="transmission"><option value="all">Any</option><option>Automatic</option><option>Manual</option></select></label>
+        <label>Fuel<select name="fuel"><option value="all">Any</option><option>Petrol</option><option>Diesel</option><option>Hybrid</option></select></label>
+        <label>Availability<select name="availability"><option value="all">All</option><option value="available">Available only</option></select></label>
+        <label>Max daily rate
+          <input type="range" name="max" min="2500" max="15000" step="100" value="15000">
+          <span class="range-readout" data-max-readout></span>
+        </label>
+        <button class="btn btn-outline" type="button" data-filter-reset>Reset filters</button>
+      </aside>
+      <div>
+        <div class="result-bar">
+          <p><span data-result-count>8 cars</span></p>
+          <label>Sort
+            <select name="sort">
+              <option value="featured">Featured</option>
+              <option value="price-asc">Price: low to high</option>
+              <option value="price-desc">Price: high to low</option>
+              <option value="year">Newest year</option>
+              <option value="name">Name</option>
+            </select>
+          </label>
+        </div>
+        <div class="card-grid" data-car-grid="rent">
+<article class="car-card" data-id="toyota-premio-2019" data-slug="toyota-premio-2019" data-name="Toyota Premio" data-type="Sedan" data-segment="Executive" data-seats="5" data-transmission="Automatic" data-fuel="Petrol" data-rate="3500" data-sale="1250000" data-status="available" data-year="2019">
+  <a class="car-card__media" href="#car-toyota-premio-2019" data-preview-detail="toyota-premio-2019">
+    <img src="assets/images/cars/toyota-premio-2019-1.jpg" srcset="assets/images/cars/toyota-premio-2019-1-800.jpg 800w, assets/images/cars/toyota-premio-2019-1.jpg 1400w" sizes="(max-width: 700px) 100vw, 380px" alt="2019 Toyota Premio Pearl white sedan for rent and sale in Khulna" width="1408" height="768" loading="lazy" data-fallback="https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?auto=format&fit=crop&w=1400&q=80">
+    <span class="car-card__badges"><span class="badge badge--ok">Available</span><span class="badge badge--rent">Rent</span></span>
+  </a>
+  <div class="car-card__body">
+    <p class="car-card__kicker">Sedan · 2019 · Pearl white</p>
+    <h3><a href="#car-toyota-premio-2019" data-preview-detail="toyota-premio-2019">Toyota Premio</a></h3>
+    <ul class="spec-row">
+      <li>5 seats</li>
+      <li>Automatic</li>
+      <li>Petrol</li>
+    </ul>
+    <div class="price-row"><p class="price">3,500 <small>BDT/day</small></p><p class="sale-note">Sale 12,50,000 BDT</p></div>
+    <div class="car-card__actions">
+      <a class="btn btn-primary" href="#car-toyota-premio-2019" data-preview-detail="toyota-premio-2019" data-i18n="view">View Details</a>
+      <button class="btn btn-accent" type="button" data-open-booking data-slug="toyota-premio-2019" data-intent="rent" data-i18n="book">Book</button>
+    </div>
+  </div>
+</article>
+
+
+<article class="car-card" data-id="toyota-axio-2018" data-slug="toyota-axio-2018" data-name="Toyota Axio" data-type="Sedan" data-segment="Compact" data-seats="5" data-transmission="Automatic" data-fuel="Hybrid" data-rate="3200" data-sale="1100000" data-status="available" data-year="2018">
+  <a class="car-card__media" href="#car-toyota-axio-2018" data-preview-detail="toyota-axio-2018">
+    <img src="assets/images/cars/toyota-axio-2018-1.jpg" srcset="assets/images/cars/toyota-axio-2018-1-800.jpg 800w, assets/images/cars/toyota-axio-2018-1.jpg 1400w" sizes="(max-width: 700px) 100vw, 380px" alt="2018 Toyota Axio Silver sedan for rent and sale in Khulna" width="1408" height="768" loading="lazy" data-fallback="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=1400&q=80">
+    <span class="car-card__badges"><span class="badge badge--ok">Available</span><span class="badge badge--rent">Rent</span></span>
+  </a>
+  <div class="car-card__body">
+    <p class="car-card__kicker">Sedan · 2018 · Silver</p>
+    <h3><a href="#car-toyota-axio-2018" data-preview-detail="toyota-axio-2018">Toyota Axio</a></h3>
+    <ul class="spec-row">
+      <li>5 seats</li>
+      <li>Automatic</li>
+      <li>Hybrid</li>
+    </ul>
+    <div class="price-row"><p class="price">3,200 <small>BDT/day</small></p><p class="sale-note">Sale 11,00,000 BDT</p></div>
+    <div class="car-card__actions">
+      <a class="btn btn-primary" href="#car-toyota-axio-2018" data-preview-detail="toyota-axio-2018" data-i18n="view">View Details</a>
+      <button class="btn btn-accent" type="button" data-open-booking data-slug="toyota-axio-2018" data-intent="rent" data-i18n="book">Book</button>
+    </div>
+  </div>
+</article>
+
+
+<article class="car-card" data-id="honda-civic-2020" data-slug="honda-civic-2020" data-name="Honda Civic" data-type="Sedan" data-segment="Sport" data-seats="5" data-transmission="Automatic" data-fuel="Petrol" data-rate="4500" data-sale="2200000" data-status="available" data-year="2020">
+  <a class="car-card__media" href="#car-honda-civic-2020" data-preview-detail="honda-civic-2020">
+    <img src="assets/images/cars/honda-civic-2020-1.jpg" srcset="assets/images/cars/honda-civic-2020-1-800.jpg 800w, assets/images/cars/honda-civic-2020-1.jpg 1400w" sizes="(max-width: 700px) 100vw, 380px" alt="2020 Honda Civic White sedan for rent and sale in Khulna" width="1408" height="768" loading="lazy" data-fallback="https://images.unsplash.com/photo-1590362891991-f776e747a588?auto=format&fit=crop&w=1400&q=80">
+    <span class="car-card__badges"><span class="badge badge--ok">Available</span><span class="badge badge--rent">Rent</span></span>
+  </a>
+  <div class="car-card__body">
+    <p class="car-card__kicker">Sedan · 2020 · White</p>
+    <h3><a href="#car-honda-civic-2020" data-preview-detail="honda-civic-2020">Honda Civic</a></h3>
+    <ul class="spec-row">
+      <li>5 seats</li>
+      <li>Automatic</li>
+      <li>Petrol</li>
+    </ul>
+    <div class="price-row"><p class="price">4,500 <small>BDT/day</small></p><p class="sale-note">Sale 22,00,000 BDT</p></div>
+    <div class="car-card__actions">
+      <a class="btn btn-primary" href="#car-honda-civic-2020" data-preview-detail="honda-civic-2020" data-i18n="view">View Details</a>
+      <button class="btn btn-accent" type="button" data-open-booking data-slug="honda-civic-2020" data-intent="rent" data-i18n="book">Book</button>
+    </div>
+  </div>
+</article>
+
+
+<article class="car-card" data-id="nissan-sunny-2017" data-slug="nissan-sunny-2017" data-name="Nissan Sunny" data-type="Sedan" data-segment="Compact" data-seats="5" data-transmission="Automatic" data-fuel="Petrol" data-rate="2800" data-sale="950000" data-status="reserved" data-year="2017">
+  <a class="car-card__media" href="#car-nissan-sunny-2017" data-preview-detail="nissan-sunny-2017">
+    <img src="assets/images/cars/nissan-sunny-2017-1.jpg" srcset="assets/images/cars/nissan-sunny-2017-1-800.jpg 800w, assets/images/cars/nissan-sunny-2017-1.jpg 1400w" sizes="(max-width: 700px) 100vw, 380px" alt="2017 Nissan Sunny Silver sedan for rent and sale in Khulna" width="1408" height="768" loading="lazy" data-fallback="https://images.unsplash.com/photo-1542282088-fe8426682b8f?auto=format&fit=crop&w=1400&q=80">
+    <span class="car-card__badges"><span class="badge badge--no">Reserved</span><span class="badge badge--rent">Rent</span></span>
+  </a>
+  <div class="car-card__body">
+    <p class="car-card__kicker">Sedan · 2017 · Silver</p>
+    <h3><a href="#car-nissan-sunny-2017" data-preview-detail="nissan-sunny-2017">Nissan Sunny</a></h3>
+    <ul class="spec-row">
+      <li>5 seats</li>
+      <li>Automatic</li>
+      <li>Petrol</li>
+    </ul>
+    <div class="price-row"><p class="price">2,800 <small>BDT/day</small></p><p class="sale-note">Sale 9,50,000 BDT</p></div>
+    <div class="car-card__actions">
+      <a class="btn btn-primary" href="#car-nissan-sunny-2017" data-preview-detail="nissan-sunny-2017" data-i18n="view">View Details</a>
+      <button class="btn btn-accent" type="button" data-open-booking data-slug="nissan-sunny-2017" data-intent="rent" data-i18n="book">Book</button>
+    </div>
+  </div>
+</article>
+
+
+<article class="car-card" data-id="pajero-sport-2019" data-slug="pajero-sport-2019" data-name="Mitsubishi Pajero Sport" data-type="SUV" data-segment="Family" data-seats="7" data-transmission="Automatic" data-fuel="Diesel" data-rate="9500" data-sale="3500000" data-status="available" data-year="2019">
+  <a class="car-card__media" href="#car-pajero-sport-2019" data-preview-detail="pajero-sport-2019">
+    <img src="assets/images/cars/pajero-sport-2019-1.jpg" srcset="assets/images/cars/pajero-sport-2019-1-800.jpg 800w, assets/images/cars/pajero-sport-2019-1.jpg 1400w" sizes="(max-width: 700px) 100vw, 380px" alt="2019 Mitsubishi Pajero Sport White suv for rent and sale in Khulna" width="1408" height="768" loading="lazy" data-fallback="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1400&q=80">
+    <span class="car-card__badges"><span class="badge badge--ok">Available</span><span class="badge badge--rent">Rent</span></span>
+  </a>
+  <div class="car-card__body">
+    <p class="car-card__kicker">SUV · 2019 · White</p>
+    <h3><a href="#car-pajero-sport-2019" data-preview-detail="pajero-sport-2019">Mitsubishi Pajero Sport</a></h3>
+    <ul class="spec-row">
+      <li>7 seats</li>
+      <li>Automatic</li>
+      <li>Diesel</li>
+    </ul>
+    <div class="price-row"><p class="price">9,500 <small>BDT/day</small></p><p class="sale-note">Sale 35,00,000 BDT</p></div>
+    <div class="car-card__actions">
+      <a class="btn btn-primary" href="#car-pajero-sport-2019" data-preview-detail="pajero-sport-2019" data-i18n="view">View Details</a>
+      <button class="btn btn-accent" type="button" data-open-booking data-slug="pajero-sport-2019" data-intent="rent" data-i18n="book">Book</button>
+    </div>
+  </div>
+</article>
+
+
+<article class="car-card" data-id="toyota-hiace-2015" data-slug="toyota-hiace-2015" data-name="Toyota Hiace" data-type="Microbus" data-segment="Group" data-seats="12" data-transmission="Manual" data-fuel="Diesel" data-rate="12000" data-sale="2800000" data-status="available" data-year="2015">
+  <a class="car-card__media" href="#car-toyota-hiace-2015" data-preview-detail="toyota-hiace-2015">
+    <img src="assets/images/cars/toyota-hiace-2015-1.jpg" srcset="assets/images/cars/toyota-hiace-2015-1-800.jpg 800w, assets/images/cars/toyota-hiace-2015-1.jpg 1400w" sizes="(max-width: 700px) 100vw, 380px" alt="2015 Toyota Hiace White microbus for rent and sale in Khulna" width="1408" height="768" loading="lazy" data-fallback="https://images.unsplash.com/photo-1527786356703-4b100091cd2c?auto=format&fit=crop&w=1400&q=80">
+    <span class="car-card__badges"><span class="badge badge--ok">Available</span><span class="badge badge--rent">Rent</span></span>
+  </a>
+  <div class="car-card__body">
+    <p class="car-card__kicker">Microbus · 2015 · White</p>
+    <h3><a href="#car-toyota-hiace-2015" data-preview-detail="toyota-hiace-2015">Toyota Hiace</a></h3>
+    <ul class="spec-row">
+      <li>12 seats</li>
+      <li>Manual</li>
+      <li>Diesel</li>
+    </ul>
+    <div class="price-row"><p class="price">12,000 <small>BDT/day</small></p><p class="sale-note">Sale 28,00,000 BDT</p></div>
+    <div class="car-card__actions">
+      <a class="btn btn-primary" href="#car-toyota-hiace-2015" data-preview-detail="toyota-hiace-2015" data-i18n="view">View Details</a>
+      <button class="btn btn-accent" type="button" data-open-booking data-slug="toyota-hiace-2015" data-intent="rent" data-i18n="book">Book</button>
+    </div>
+  </div>
+</article>
+
+
+<article class="car-card" data-id="maruti-swift-2021" data-slug="maruti-swift-2021" data-name="Maruti Suzuki Swift" data-type="Hatchback" data-segment="City" data-seats="5" data-transmission="Manual" data-fuel="Petrol" data-rate="2500" data-sale="900000" data-status="available" data-year="2021">
+  <a class="car-card__media" href="#car-maruti-swift-2021" data-preview-detail="maruti-swift-2021">
+    <img src="assets/images/cars/maruti-swift-2021-1.jpg" srcset="assets/images/cars/maruti-swift-2021-1-800.jpg 800w, assets/images/cars/maruti-swift-2021-1.jpg 1400w" sizes="(max-width: 700px) 100vw, 380px" alt="2021 Maruti Suzuki Swift White hatchback for rent and sale in Khulna" width="1408" height="768" loading="lazy" data-fallback="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=1400&q=80">
+    <span class="car-card__badges"><span class="badge badge--ok">Available</span><span class="badge badge--rent">Rent</span></span>
+  </a>
+  <div class="car-card__body">
+    <p class="car-card__kicker">Hatchback · 2021 · White</p>
+    <h3><a href="#car-maruti-swift-2021" data-preview-detail="maruti-swift-2021">Maruti Suzuki Swift</a></h3>
+    <ul class="spec-row">
+      <li>5 seats</li>
+      <li>Manual</li>
+      <li>Petrol</li>
+    </ul>
+    <div class="price-row"><p class="price">2,500 <small>BDT/day</small></p><p class="sale-note">Sale 9,00,000 BDT</p></div>
+    <div class="car-card__actions">
+      <a class="btn btn-primary" href="#car-maruti-swift-2021" data-preview-detail="maruti-swift-2021" data-i18n="view">View Details</a>
+      <button class="btn btn-accent" type="button" data-open-booking data-slug="maruti-swift-2021" data-intent="rent" data-i18n="book">Book</button>
+    </div>
+  </div>
+</article>
+
+
+<article class="car-card" data-id="bmw-5series-2018" data-slug="bmw-5series-2018" data-name="BMW 5 Series" data-type="Sedan" data-segment="Luxury" data-seats="5" data-transmission="Automatic" data-fuel="Petrol" data-rate="15000" data-sale="5000000" data-status="available" data-year="2018">
+  <a class="car-card__media" href="#car-bmw-5series-2018" data-preview-detail="bmw-5series-2018">
+    <img src="assets/images/cars/bmw-5series-2018-1.jpg" srcset="assets/images/cars/bmw-5series-2018-1-800.jpg 800w, assets/images/cars/bmw-5series-2018-1.jpg 1400w" sizes="(max-width: 700px) 100vw, 380px" alt="2018 BMW 5 Series Mineral white sedan for rent and sale in Khulna" width="1408" height="768" loading="lazy" data-fallback="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1400&q=80">
+    <span class="car-card__badges"><span class="badge badge--ok">Available</span><span class="badge badge--rent">Rent</span><span class="badge badge--lux">Luxury</span></span>
+  </a>
+  <div class="car-card__body">
+    <p class="car-card__kicker">Sedan · 2018 · Mineral white</p>
+    <h3><a href="#car-bmw-5series-2018" data-preview-detail="bmw-5series-2018">BMW 5 Series</a></h3>
+    <ul class="spec-row">
+      <li>5 seats</li>
+      <li>Automatic</li>
+      <li>Petrol</li>
+    </ul>
+    <div class="price-row"><p class="price">15,000 <small>BDT/day</small></p><p class="sale-note">Sale 50,00,000 BDT</p></div>
+    <div class="car-card__actions">
+      <a class="btn btn-primary" href="#car-bmw-5series-2018" data-preview-detail="bmw-5series-2018" data-i18n="view">View Details</a>
+      <button class="btn btn-accent" type="button" data-open-booking data-slug="bmw-5series-2018" data-intent="rent" data-i18n="book">Book</button>
+    </div>
+  </div>
+</article>
+</div>
+        <p class="empty" data-empty hidden>No cars match those filters. Reset, or call +8801330132141 and we will tell you what is on the lot.</p>
+      </div>
+    </div>
+  </form>
+</section>
+
+<section id="sale">
+  <div class="page-hero">
+    <div class="container">
+      <p class="crumbs"><a href="#home">Home</a> / Cars for sale in Khulna</p>
+      <h1>Cars for sale in Khulna</h1>
+      <p>Asking prices in BDT, lakh style. Enquire to buy, then inspect the car at the Daulatpur desk. Head office: Daulatpur, Khulna 9202, Bangladesh. mail@gmail.com · +8801330132141.</p>
+    </div>
+  </div>
+  <form data-filter-form>
+    <div class="container listing-layout">
+      <aside class="filters" aria-label="Filter cars">
+        <h2>Filter</h2>
+        <label>Search<input type="search" name="q" placeholder="Premio, Hiace, BMW"></label>
+        <label>Type<select name="type"><option value="all">Any type</option>
+<option value="Sedan">Sedan</option>
+<option value="SUV">SUV</option>
+<option value="Hatchback">Hatchback</option>
+<option value="Microbus">Microbus</option>
+<option value="Luxury">Luxury</option></select></label>
+        <label>Seats<select name="seats"><option value="all">Any</option><option value="5">5 seats</option><option value="7">7 seats</option><option value="12">12 seats</option></select></label>
+        <label>Transmission<select name="transmission"><option value="all">Any</option><option>Automatic</option><option>Manual</option></select></label>
+        <label>Fuel<select name="fuel"><option value="all">Any</option><option>Petrol</option><option>Diesel</option><option>Hybrid</option></select></label>
+        <label>Availability<select name="availability"><option value="all">All</option><option value="available">Available only</option></select></label>
+        <label>Max asking price
+          <input type="range" name="max" min="900000" max="5000000" step="50000" value="5000000">
+          <span class="range-readout" data-max-readout></span>
+        </label>
+        <button class="btn btn-outline" type="button" data-filter-reset>Reset filters</button>
+      </aside>
+      <div>
+        <div class="result-bar">
+          <p><span data-result-count>8 cars</span></p>
+          <label>Sort
+            <select name="sort">
+              <option value="featured">Featured</option>
+              <option value="price-asc">Price: low to high</option>
+              <option value="price-desc">Price: high to low</option>
+              <option value="year">Newest year</option>
+              <option value="name">Name</option>
+            </select>
+          </label>
+        </div>
+        <div class="card-grid" data-car-grid="sale">
+<article class="car-card" data-id="toyota-premio-2019" data-slug="toyota-premio-2019" data-name="Toyota Premio" data-type="Sedan" data-segment="Executive" data-seats="5" data-transmission="Automatic" data-fuel="Petrol" data-rate="3500" data-sale="1250000" data-status="available" data-year="2019">
+  <a class="car-card__media" href="#car-toyota-premio-2019" data-preview-detail="toyota-premio-2019">
+    <img src="assets/images/cars/toyota-premio-2019-1.jpg" srcset="assets/images/cars/toyota-premio-2019-1-800.jpg 800w, assets/images/cars/toyota-premio-2019-1.jpg 1400w" sizes="(max-width: 700px) 100vw, 380px" alt="2019 Toyota Premio Pearl white sedan for rent and sale in Khulna" width="1408" height="768" loading="lazy" data-fallback="https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?auto=format&fit=crop&w=1400&q=80">
+    <span class="car-card__badges"><span class="badge badge--sale">For sale</span></span>
+  </a>
+  <div class="car-card__body">
+    <p class="car-card__kicker">Sedan · 2019 · Pearl white</p>
+    <h3><a href="#car-toyota-premio-2019" data-preview-detail="toyota-premio-2019">Toyota Premio</a></h3>
+    <ul class="spec-row">
+      <li>5 seats</li>
+      <li>Automatic</li>
+      <li>Petrol</li>
+    </ul>
+    <div class="price-row"><p class="price">12,50,000 <small>BDT</small></p><p class="sale-note">Rent 3,500 BDT/day</p></div>
+    <div class="car-card__actions">
+      <a class="btn btn-primary" href="#car-toyota-premio-2019" data-preview-detail="toyota-premio-2019" data-i18n="view">View Details</a>
+      <button class="btn btn-accent" type="button" data-open-booking data-slug="toyota-premio-2019" data-intent="sale" data-i18n="enquire">Enquire to Buy</button>
+    </div>
+  </div>
+</article>
+
+
+<article class="car-card" data-id="toyota-axio-2018" data-slug="toyota-axio-2018" data-name="Toyota Axio" data-type="Sedan" data-segment="Compact" data-seats="5" data-transmission="Automatic" data-fuel="Hybrid" data-rate="3200" data-sale="1100000" data-status="available" data-year="2018">
+  <a class="car-card__media" href="#car-toyota-axio-2018" data-preview-detail="toyota-axio-2018">
+    <img src="assets/images/cars/toyota-axio-2018-1.jpg" srcset="assets/images/cars/toyota-axio-2018-1-800.jpg 800w, assets/images/cars/toyota-axio-2018-1.jpg 1400w" sizes="(max-width: 700px) 100vw, 380px" alt="2018 Toyota Axio Silver sedan for rent and sale in Khulna" width="1408" height="768" loading="lazy" data-fallback="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=1400&q=80">
+    <span class="car-card__badges"><span class="badge badge--sale">For sale</span></span>
+  </a>
+  <div class="car-card__body">
+    <p class="car-card__kicker">Sedan · 2018 · Silver</p>
+    <h3><a href="#car-toyota-axio-2018" data-preview-detail="toyota-axio-2018">Toyota Axio</a></h3>
+    <ul class="spec-row">
+      <li>5 seats</li>
+      <li>Automatic</li>
+      <li>Hybrid</li>
+    </ul>
+    <div class="price-row"><p class="price">11,00,000 <small>BDT</small></p><p class="sale-note">Rent 3,200 BDT/day</p></div>
+    <div class="car-card__actions">
+      <a class="btn btn-primary" href="#car-toyota-axio-2018" data-preview-detail="toyota-axio-2018" data-i18n="view">View Details</a>
+      <button class="btn btn-accent" type="button" data-open-booking data-slug="toyota-axio-2018" data-intent="sale" data-i18n="enquire">Enquire to Buy</button>
+    </div>
+  </div>
+</article>
+
+
+<article class="car-card" data-id="honda-civic-2020" data-slug="honda-civic-2020" data-name="Honda Civic" data-type="Sedan" data-segment="Sport" data-seats="5" data-transmission="Automatic" data-fuel="Petrol" data-rate="4500" data-sale="2200000" data-status="available" data-year="2020">
+  <a class="car-card__media" href="#car-honda-civic-2020" data-preview-detail="honda-civic-2020">
+    <img src="assets/images/cars/honda-civic-2020-1.jpg" srcset="assets/images/cars/honda-civic-2020-1-800.jpg 800w, assets/images/cars/honda-civic-2020-1.jpg 1400w" sizes="(max-width: 700px) 100vw, 380px" alt="2020 Honda Civic White sedan for rent and sale in Khulna" width="1408" height="768" loading="lazy" data-fallback="https://images.unsplash.com/photo-1590362891991-f776e747a588?auto=format&fit=crop&w=1400&q=80">
+    <span class="car-card__badges"><span class="badge badge--sale">For sale</span></span>
+  </a>
+  <div class="car-card__body">
+    <p class="car-card__kicker">Sedan · 2020 · White</p>
+    <h3><a href="#car-honda-civic-2020" data-preview-detail="honda-civic-2020">Honda Civic</a></h3>
+    <ul class="spec-row">
+      <li>5 seats</li>
+      <li>Automatic</li>
+      <li>Petrol</li>
+    </ul>
+    <div class="price-row"><p class="price">22,00,000 <small>BDT</small></p><p class="sale-note">Rent 4,500 BDT/day</p></div>
+    <div class="car-card__actions">
+      <a class="btn btn-primary" href="#car-honda-civic-2020" data-preview-detail="honda-civic-2020" data-i18n="view">View Details</a>
+      <button class="btn btn-accent" type="button" data-open-booking data-slug="honda-civic-2020" data-intent="sale" data-i18n="enquire">Enquire to Buy</button>
+    </div>
+  </div>
+</article>
+
+
+<article class="car-card" data-id="nissan-sunny-2017" data-slug="nissan-sunny-2017" data-name="Nissan Sunny" data-type="Sedan" data-segment="Compact" data-seats="5" data-transmission="Automatic" data-fuel="Petrol" data-rate="2800" data-sale="950000" data-status="reserved" data-year="2017">
+  <a class="car-card__media" href="#car-nissan-sunny-2017" data-preview-detail="nissan-sunny-2017">
+    <img src="assets/images/cars/nissan-sunny-2017-1.jpg" srcset="assets/images/cars/nissan-sunny-2017-1-800.jpg 800w, assets/images/cars/nissan-sunny-2017-1.jpg 1400w" sizes="(max-width: 700px) 100vw, 380px" alt="2017 Nissan Sunny Silver sedan for rent and sale in Khulna" width="1408" height="768" loading="lazy" data-fallback="https://images.unsplash.com/photo-1542282088-fe8426682b8f?auto=format&fit=crop&w=1400&q=80">
+    <span class="car-card__badges"><span class="badge badge--sale">For sale</span></span>
+  </a>
+  <div class="car-card__body">
+    <p class="car-card__kicker">Sedan · 2017 · Silver</p>
+    <h3><a href="#car-nissan-sunny-2017" data-preview-detail="nissan-sunny-2017">Nissan Sunny</a></h3>
+    <ul class="spec-row">
+      <li>5 seats</li>
+      <li>Automatic</li>
+      <li>Petrol</li>
+    </ul>
+    <div class="price-row"><p class="price">9,50,000 <small>BDT</small></p><p class="sale-note">Rent 2,800 BDT/day</p></div>
+    <div class="car-card__actions">
+      <a class="btn btn-primary" href="#car-nissan-sunny-2017" data-preview-detail="nissan-sunny-2017" data-i18n="view">View Details</a>
+      <button class="btn btn-accent" type="button" data-open-booking data-slug="nissan-sunny-2017" data-intent="sale" data-i18n="enquire">Enquire to Buy</button>
+    </div>
+  </div>
+</article>
+
+
+<article class="car-card" data-id="pajero-sport-2019" data-slug="pajero-sport-2019" data-name="Mitsubishi Pajero Sport" data-type="SUV" data-segment="Family" data-seats="7" data-transmission="Automatic" data-fuel="Diesel" data-rate="9500" data-sale="3500000" data-status="available" data-year="2019">
+  <a class="car-card__media" href="#car-pajero-sport-2019" data-preview-detail="pajero-sport-2019">
+    <img src="assets/images/cars/pajero-sport-2019-1.jpg" srcset="assets/images/cars/pajero-sport-2019-1-800.jpg 800w, assets/images/cars/pajero-sport-2019-1.jpg 1400w" sizes="(max-width: 700px) 100vw, 380px" alt="2019 Mitsubishi Pajero Sport White suv for rent and sale in Khulna" width="1408" height="768" loading="lazy" data-fallback="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1400&q=80">
+    <span class="car-card__badges"><span class="badge badge--sale">For sale</span></span>
+  </a>
+  <div class="car-card__body">
+    <p class="car-card__kicker">SUV · 2019 · White</p>
+    <h3><a href="#car-pajero-sport-2019" data-preview-detail="pajero-sport-2019">Mitsubishi Pajero Sport</a></h3>
+    <ul class="spec-row">
+      <li>7 seats</li>
+      <li>Automatic</li>
+      <li>Diesel</li>
+    </ul>
+    <div class="price-row"><p class="price">35,00,000 <small>BDT</small></p><p class="sale-note">Rent 9,500 BDT/day</p></div>
+    <div class="car-card__actions">
+      <a class="btn btn-primary" href="#car-pajero-sport-2019" data-preview-detail="pajero-sport-2019" data-i18n="view">View Details</a>
+      <button class="btn btn-accent" type="button" data-open-booking data-slug="pajero-sport-2019" data-intent="sale" data-i18n="enquire">Enquire to Buy</button>
+    </div>
+  </div>
+</article>
+
+
+<article class="car-card" data-id="toyota-hiace-2015" data-slug="toyota-hiace-2015" data-name="Toyota Hiace" data-type="Microbus" data-segment="Group" data-seats="12" data-transmission="Manual" data-fuel="Diesel" data-rate="12000" data-sale="2800000" data-status="available" data-year="2015">
+  <a class="car-card__media" href="#car-toyota-hiace-2015" data-preview-detail="toyota-hiace-2015">
+    <img src="assets/images/cars/toyota-hiace-2015-1.jpg" srcset="assets/images/cars/toyota-hiace-2015-1-800.jpg 800w, assets/images/cars/toyota-hiace-2015-1.jpg 1400w" sizes="(max-width: 700px) 100vw, 380px" alt="2015 Toyota Hiace White microbus for rent and sale in Khulna" width="1408" height="768" loading="lazy" data-fallback="https://images.unsplash.com/photo-1527786356703-4b100091cd2c?auto=format&fit=crop&w=1400&q=80">
+    <span class="car-card__badges"><span class="badge badge--sale">For sale</span></span>
+  </a>
+  <div class="car-card__body">
+    <p class="car-card__kicker">Microbus · 2015 · White</p>
+    <h3><a href="#car-toyota-hiace-2015" data-preview-detail="toyota-hiace-2015">Toyota Hiace</a></h3>
+    <ul class="spec-row">
+      <li>12 seats</li>
+      <li>Manual</li>
+      <li>Diesel</li>
+    </ul>
+    <div class="price-row"><p class="price">28,00,000 <small>BDT</small></p><p class="sale-note">Rent 12,000 BDT/day</p></div>
+    <div class="car-card__actions">
+      <a class="btn btn-primary" href="#car-toyota-hiace-2015" data-preview-detail="toyota-hiace-2015" data-i18n="view">View Details</a>
+      <button class="btn btn-accent" type="button" data-open-booking data-slug="toyota-hiace-2015" data-intent="sale" data-i18n="enquire">Enquire to Buy</button>
+    </div>
+  </div>
+</article>
+
+
+<article class="car-card" data-id="maruti-swift-2021" data-slug="maruti-swift-2021" data-name="Maruti Suzuki Swift" data-type="Hatchback" data-segment="City" data-seats="5" data-transmission="Manual" data-fuel="Petrol" data-rate="2500" data-sale="900000" data-status="available" data-year="2021">
+  <a class="car-card__media" href="#car-maruti-swift-2021" data-preview-detail="maruti-swift-2021">
+    <img src="assets/images/cars/maruti-swift-2021-1.jpg" srcset="assets/images/cars/maruti-swift-2021-1-800.jpg 800w, assets/images/cars/maruti-swift-2021-1.jpg 1400w" sizes="(max-width: 700px) 100vw, 380px" alt="2021 Maruti Suzuki Swift White hatchback for rent and sale in Khulna" width="1408" height="768" loading="lazy" data-fallback="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=1400&q=80">
+    <span class="car-card__badges"><span class="badge badge--sale">For sale</span></span>
+  </a>
+  <div class="car-card__body">
+    <p class="car-card__kicker">Hatchback · 2021 · White</p>
+    <h3><a href="#car-maruti-swift-2021" data-preview-detail="maruti-swift-2021">Maruti Suzuki Swift</a></h3>
+    <ul class="spec-row">
+      <li>5 seats</li>
+      <li>Manual</li>
+      <li>Petrol</li>
+    </ul>
+    <div class="price-row"><p class="price">9,00,000 <small>BDT</small></p><p class="sale-note">Rent 2,500 BDT/day</p></div>
+    <div class="car-card__actions">
+      <a class="btn btn-primary" href="#car-maruti-swift-2021" data-preview-detail="maruti-swift-2021" data-i18n="view">View Details</a>
+      <button class="btn btn-accent" type="button" data-open-booking data-slug="maruti-swift-2021" data-intent="sale" data-i18n="enquire">Enquire to Buy</button>
+    </div>
+  </div>
+</article>
+
+
+<article class="car-card" data-id="bmw-5series-2018" data-slug="bmw-5series-2018" data-name="BMW 5 Series" data-type="Sedan" data-segment="Luxury" data-seats="5" data-transmission="Automatic" data-fuel="Petrol" data-rate="15000" data-sale="5000000" data-status="available" data-year="2018">
+  <a class="car-card__media" href="#car-bmw-5series-2018" data-preview-detail="bmw-5series-2018">
+    <img src="assets/images/cars/bmw-5series-2018-1.jpg" srcset="assets/images/cars/bmw-5series-2018-1-800.jpg 800w, assets/images/cars/bmw-5series-2018-1.jpg 1400w" sizes="(max-width: 700px) 100vw, 380px" alt="2018 BMW 5 Series Mineral white sedan for rent and sale in Khulna" width="1408" height="768" loading="lazy" data-fallback="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1400&q=80">
+    <span class="car-card__badges"><span class="badge badge--sale">For sale</span><span class="badge badge--lux">Luxury</span></span>
+  </a>
+  <div class="car-card__body">
+    <p class="car-card__kicker">Sedan · 2018 · Mineral white</p>
+    <h3><a href="#car-bmw-5series-2018" data-preview-detail="bmw-5series-2018">BMW 5 Series</a></h3>
+    <ul class="spec-row">
+      <li>5 seats</li>
+      <li>Automatic</li>
+      <li>Petrol</li>
+    </ul>
+    <div class="price-row"><p class="price">50,00,000 <small>BDT</small></p><p class="sale-note">Rent 15,000 BDT/day</p></div>
+    <div class="car-card__actions">
+      <a class="btn btn-primary" href="#car-bmw-5series-2018" data-preview-detail="bmw-5series-2018" data-i18n="view">View Details</a>
+      <button class="btn btn-accent" type="button" data-open-booking data-slug="bmw-5series-2018" data-intent="sale" data-i18n="enquire">Enquire to Buy</button>
+    </div>
+  </div>
+</article>
+</div>
+        <p class="empty" data-empty hidden>No cars match those filters. Reset, or call +8801330132141 and we will tell you what is on the lot.</p>
+      </div>
+    </div>
+  </form>
+</section>
+
+<section class="section" id="about">
+  <div class="container split">
+    <img src="assets/images/about.jpg" alt="Yard in Daulatpur, Khulna" width="1408" height="768">
+    <div>
+      <p class="eyebrow">About</p>
+      <h2>Head office — Daulatpur, Khulna</h2>
+      <p>Daulatpur, Khulna 9202, Bangladesh. Email <a href="mailto:mail@gmail.com">mail@gmail.com</a>. Phone <a href="tel:+8801330132141">+8801330132141</a>. Open daily 8:00–21:00.</p>
+      <p>This single file is the quick preview. The multi-page site (index.html, fleet.html, car detail pages) is what you deploy.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--bg" id="contact">
+  <div class="container contact-grid">
+    <div>
+      <h2>Contact</h2>
+      <form data-booking-form data-intent="contact" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="hidden" name="intent" value="contact">
+        <div class="form-grid">
+          <label>Name<input name="name" required></label>
+          <label>Email<input name="email" type="email" required></label>
+          <label>Phone<input name="phone" type="tel" required></label>
+          <label>Message<textarea name="message" required></textarea></label>
+          <ul class="error-list" data-errors role="alert"></ul>
+          <button class="btn btn-primary" type="submit" data-set-intent="contact">Send message</button>
+        </div>
+      </form>
+    </div>
+    <div>
+      <iframe class="map-frame" title="Google Map centred on Daulatpur, Khulna" src="https://maps.google.com/maps?q=22.8705,89.5242&z=15&hl=en&output=embed" loading="lazy"></iframe>
+      <p><a href="https://www.google.com/maps/dir/?api=1&destination=22.8705,89.5242">Directions to Daulatpur, Khulna</a></p>
+    </div>
+  </div>
+</section>
+<section id="preview-detail" class="section" hidden></section>
+</main>
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="logo" href="#home" style="margin-bottom:10px">
+        <span class="logo__mark" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 32 32" fill="none"><path d="M5 21c1.4-5 4-7.5 8-7.5h6c4 0 6.6 2.5 8 7.5" stroke="#fff" stroke-width="2" stroke-linecap="round"/><circle cx="11" cy="21" r="2" fill="#ff6b00"/><circle cx="21" cy="21" r="2" fill="#ff6b00"/><path d="M12 13.5h8" stroke="#ff6b00" stroke-width="2" stroke-linecap="round"/></svg></span>
+        <span class="logo__text"><strong style="color:#fff">Daulat Drive</strong><small style="color:#c9d4e4">Rental &amp; Sales · Khulna</small></span>
+      </a>
+      <p>Daily and weekly car hire, and inspected cars for sale, from the head office in Daulatpur, Khulna.</p>
+      <p><a href="mailto:mail@gmail.com">mail@gmail.com</a><br><a href="tel:+8801330132141">+8801330132141</a></p>
+    </div>
+    <div>
+      <h3>Visit</h3>
+      <ul>
+        <li>Daulatpur, Khulna 9202, Bangladesh</li>
+        <li>Open daily, 8:00–21:00</li>
+        <li><a href="https://www.google.com/maps/dir/?api=1&destination=22.8705,89.5242" rel="noopener">Directions</a></li>
+        <li><a href="https://wa.me/8801330132141" rel="noopener">WhatsApp +8801330132141</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Explore</h3>
+      <ul>
+        <li><a href="#fleet">Rental fleet</a></li>
+        <li><a href="#sale">Cars for sale</a></li>
+        <li><a href="#about">About the desk</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Policies</h3>
+      <ul>
+        <li><a href="#terms">Rental terms</a></li>
+        <li><a href="#privacy">Privacy</a></li>
+        <li><a href="booking-confirmation.html">Request confirmation</a></li>
+        <!-- Optional admin mockup is not linked in the public nav: admin.html -->
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 Daulat Drive · Daulatpur, Khulna, Bangladesh</span>
+    <!-- REMOVE WHEN LIVE: sample inventory line -->
+    <span class="footer-demo">Sample listings for setup. Confirm any car on +8801330132141.</span>
+  </div>
+</footer>
+<div class="callbar" role="region" aria-label="Quick contact">
+  <a class="btn btn-primary" href="tel:+8801330132141">Call +8801330132141</a>
+  <button class="btn btn-accent" type="button" data-open-booking data-intent="rent">Book</button>
+</div>
+
+<dialog class="modal" id="booking-modal" aria-labelledby="booking-title">
+  <div class="modal__head">
+    <h2 id="booking-title">Request a reservation</h2>
+    <button class="icon-btn" type="button" data-close-modal aria-label="Close">×</button>
+  </div>
+  <div class="modal__body">
+    <!-- REPLACE form action with your Formspree endpoint. JS uses CONFIG.formspreeEndpoint in assets/js/main.js.
+         If that still contains YOUR_FORM_ID, submit falls back to mailto:mail@gmail.com.
+         Netlify: add netlify netlify-honeypot="bot-field" and a hidden input name="form-name" value="booking". -->
+    <form id="booking-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" data-intent="rent">
+      <input type="hidden" name="intent" value="rent">
+      <input type="hidden" name="_subject" value="Daulat Drive reservation">
+      <p class="sr-only"><label>Leave blank<input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></p>
+      <div class="form-grid">
+        <label>Name<input name="name" autocomplete="name" required></label>
+        <label>Email<input name="email" type="email" autocomplete="email" required></label>
+        <label>Phone<input name="phone" type="tel" autocomplete="tel" required placeholder="01XXXXXXXXX"></label>
+        <label>Pickup location
+          <select name="pickup_location" required><option value="Daulatpur, Khulna" selected>Daulatpur, Khulna</option>
+<option value="Sonadanga, Khulna">Sonadanga, Khulna</option>
+<option value="Khalishpur, Khulna">Khalishpur, Khulna</option>
+<option value="Khulna Railway Station">Khulna Railway Station</option>
+<option value="Jashore Airport (delivery, quoted separately)">Jashore Airport (delivery, quoted separately)</option></select>
+        </label>
+        <label>Car
+          <select name="car" required><option value="">Loading cars…</option></select>
+        </label>
+        <div data-rent-only class="form-grid">
+          <label>Pickup date<input name="pickup" type="date"></label>
+          <label>Pickup time<input name="pickup_time" type="time" value="09:00"></label>
+          <label>Return date<input name="return" type="date"></label>
+          <label>Return time<input name="return_time" type="time" value="09:00"></label>
+          <label class="check"><input type="checkbox" name="driver"> Add a driver (1,500 BDT/day)</label>
+        </div>
+        <label>Message<textarea name="message" placeholder="NID ready, preferred colour, or a question about the papers."></textarea></label>
+        <p class="notice" data-unavailable hidden>This car is reserved for rental. Call +8801330132141 to join the waitlist, or send a sale enquiry instead.</p>
+        <div class="estimate" id="booking-estimate" data-estimate aria-live="polite">Choose dates to estimate the hire.</div>
+        <ul class="error-list" data-errors role="alert"></ul>
+        <button class="btn btn-primary" type="submit" data-submit data-set-intent="rent">Send reservation request</button>
+        <button class="btn btn-accent" type="submit" data-set-intent="sale">Enquire to Buy</button>
+        <p class="help">No payment is taken online. If the form service is not connected, your email app opens a message to mail@gmail.com. Airport delivery is quoted separately.</p>
+      </div>
+    </form>
+  </div>
+</dialog>
+<script>window.DAULAT_CARS = [{"id": "toyota-premio-2019", "make": "Toyota", "model": "Premio", "year": 2019, "slug": "toyota-premio-2019", "type": "Sedan", "segment": "Executive", "seats": 5, "transmission": "Automatic", "fuel": "Petrol", "engine": "1.8L petrol", "color": "Pearl white", "luggage": "2 large bags", "rental_rate_per_day": 3500, "sale_price": 1250000, "mileage_km": 62400, "availability_status": "available", "focus": "rental", "features": ["Cold AC", "ABS with EBD", "Dual airbags", "Rear camera", "Bluetooth audio", "Power windows", "Alloy wheels", "Keyless entry"], "description": "A quiet pearl-white Premio for city meetings and the Jessore road. The AC holds in Khulna heat, the tyres are recent, and the papers are at the Daulatpur desk for you to read before you take the keys.", "images": ["https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?auto=format&fit=crop&w=1400&q=80", "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1400&q=80", "https://images.unsplash.com/photo-1550355291-bbee04a92027?auto=format&fit=crop&w=1400&q=80"], "local_images": ["assets/images/cars/toyota-premio-2019-1.jpg", "assets/images/cars/toyota-premio-2019-2.jpg", "assets/images/cars/toyota-premio-2019-3.jpg"]}, {"id": "toyota-axio-2018", "make": "Toyota", "model": "Axio", "year": 2018, "slug": "toyota-axio-2018", "type": "Sedan", "segment": "Compact", "seats": 5, "transmission": "Automatic", "fuel": "Hybrid", "engine": "1.5L hybrid", "color": "Silver", "luggage": "2 medium bags", "rental_rate_per_day": 3200, "sale_price": 1100000, "mileage_km": 78200, "availability_status": "available", "focus": "rental", "features": ["Hybrid drive", "Eco mode", "Rear camera", "ABS", "Dual airbags", "USB audio", "Power steering", "Keyless entry"], "description": "The everyday Khulna car: light on fuel, easy to park in Sonadanga, and comfortable for four adults. A practical hire for the week, and a straightforward sale if you want to keep it.", "images": ["https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=1400&q=80", "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&w=1400&q=80", "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1400&q=80"], "local_images": ["assets/images/cars/toyota-axio-2018-1.jpg", "assets/images/cars/toyota-axio-2018-2.jpg", "assets/images/cars/toyota-axio-2018-3.jpg"]}, {"id": "honda-civic-2020", "make": "Honda", "model": "Civic", "year": 2020, "slug": "honda-civic-2020", "type": "Sedan", "segment": "Sport", "seats": 5, "transmission": "Automatic", "fuel": "Petrol", "engine": "1.5L turbo petrol", "color": "White", "luggage": "2 large bags", "rental_rate_per_day": 4500, "sale_price": 2200000, "mileage_km": 41000, "availability_status": "available", "focus": "rental", "features": ["Turbo engine", "Touchscreen audio", "Cruise control", "Rear camera", "ABS", "Airbags", "Alloy wheels", "Push start"], "description": "For clients who want a sharper drive than a standard sedan. Lower mileage than the rest of the yard, service notes available at the desk, and a firm asking price if you would rather buy than hire.", "images": ["https://images.unsplash.com/photo-1590362891991-f776e747a588?auto=format&fit=crop&w=1400&q=80", "https://images.unsplash.com/photo-1609521263047-f8f205293f24?auto=format&fit=crop&w=1400&q=80", "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1400&q=80"], "local_images": ["assets/images/cars/honda-civic-2020-1.jpg", "assets/images/cars/honda-civic-2020-2.jpg", "assets/images/cars/honda-civic-2020-3.jpg"]}, {"id": "nissan-sunny-2017", "make": "Nissan", "model": "Sunny", "year": 2017, "slug": "nissan-sunny-2017", "type": "Sedan", "segment": "Compact", "seats": 5, "transmission": "Automatic", "fuel": "Petrol", "engine": "1.5L petrol", "color": "Silver", "luggage": "2 medium bags", "rental_rate_per_day": 2800, "sale_price": 950000, "mileage_km": 91500, "availability_status": "reserved", "focus": "rental", "features": ["AC", "Power steering", "ABS", "Audio system", "Power windows", "Central lock", "Spare wheel", "Floor mats"], "description": "A simple, inexpensive daily sedan. It is reserved for a weekly hire right now, so the rental form will not accept a new booking. Sale enquiries are still open — call the desk if you want to see it when it returns.", "images": ["https://images.unsplash.com/photo-1542282088-fe8426682b8f?auto=format&fit=crop&w=1400&q=80", "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1400&q=80", "https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?auto=format&fit=crop&w=1400&q=80"], "local_images": ["assets/images/cars/nissan-sunny-2017-1.jpg", "assets/images/cars/nissan-sunny-2017-2.jpg", "assets/images/cars/nissan-sunny-2017-3.jpg"]}, {"id": "pajero-sport-2019", "make": "Mitsubishi", "model": "Pajero Sport", "year": 2019, "slug": "pajero-sport-2019", "type": "SUV", "segment": "Family", "seats": 7, "transmission": "Automatic", "fuel": "Diesel", "engine": "2.4L diesel", "color": "White", "luggage": "Family load behind the third row", "rental_rate_per_day": 9500, "sale_price": 3500000, "mileage_km": 54800, "availability_status": "available", "focus": "rental", "features": ["7 seats", "Diesel torque", "Rear camera", "Cruise control", "Roof rails", "Hill-start assist", "Alloy wheels", "Three-zone comfort"], "description": "The family and district-road SUV. Seven seats for a Sundarbans weekend or a relatives' visit, with enough clearance for roads outside the city. A driver can be added if you do not want to manage it yourself.", "images": ["https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1400&q=80", "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1400&q=80", "https://images.unsplash.com/photo-1619767886558-efdc259cde1a?auto=format&fit=crop&w=1400&q=80"], "local_images": ["assets/images/cars/pajero-sport-2019-1.jpg", "assets/images/cars/pajero-sport-2019-2.jpg", "assets/images/cars/pajero-sport-2019-3.jpg"]}, {"id": "toyota-hiace-2015", "make": "Toyota", "model": "Hiace", "year": 2015, "slug": "toyota-hiace-2015", "type": "Microbus", "segment": "Group", "seats": 12, "transmission": "Manual", "fuel": "Diesel", "engine": "3.0L diesel", "color": "White", "luggage": "Rear luggage well", "rental_rate_per_day": 12000, "sale_price": 2800000, "mileage_km": 148000, "availability_status": "available", "focus": "rental", "features": ["12 seats", "High roof", "Dual AC", "Sliding door", "Diesel", "First-aid kit", "Seat belts", "Driver available"], "description": "The microbus for weddings, office shifts, and group tours out of Khulna. Twelve seats, a high roof, and dual AC. Most hirers take it with a driver — add that on the form and the estimate includes 1,500 BDT per day.", "images": ["https://images.unsplash.com/photo-1527786356703-4b100091cd2c?auto=format&fit=crop&w=1400&q=80", "https://images.unsplash.com/photo-1464219789935-c2d9d9aba644?auto=format&fit=crop&w=1400&q=80", "https://images.unsplash.com/photo-1559416523-140ddc3d238c?auto=format&fit=crop&w=1400&q=80"], "local_images": ["assets/images/cars/toyota-hiace-2015-1.jpg", "assets/images/cars/toyota-hiace-2015-2.jpg", "assets/images/cars/toyota-hiace-2015-3.jpg"]}, {"id": "maruti-swift-2021", "make": "Maruti Suzuki", "model": "Swift", "year": 2021, "slug": "maruti-swift-2021", "type": "Hatchback", "segment": "City", "seats": 5, "transmission": "Manual", "fuel": "Petrol", "engine": "1.2L petrol", "color": "White", "luggage": "1 large bag", "rental_rate_per_day": 2500, "sale_price": 900000, "mileage_km": 28400, "availability_status": "available", "focus": "rental", "features": ["Light on fuel", "ABS", "Dual airbags", "Touchscreen audio", "Steering controls", "Rear parking sensors", "Power windows", "Compact size"], "description": "The budget hatch for short city hires and campus runs. Easy to place in a tight lane, lowest daily rate on the yard, and low kilometres if you are looking at it to buy.", "images": ["https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=1400&q=80", "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=1400&q=80", "https://images.unsplash.com/photo-1471478331149-c72f17e33c73?auto=format&fit=crop&w=1400&q=80"], "local_images": ["assets/images/cars/maruti-swift-2021-1.jpg", "assets/images/cars/maruti-swift-2021-2.jpg", "assets/images/cars/maruti-swift-2021-3.jpg"]}, {"id": "bmw-5series-2018", "make": "BMW", "model": "5 Series", "year": 2018, "slug": "bmw-5series-2018", "type": "Sedan", "segment": "Luxury", "seats": 5, "transmission": "Automatic", "fuel": "Petrol", "engine": "2.0L petrol", "color": "Mineral white", "luggage": "2 large bags", "rental_rate_per_day": 15000, "sale_price": 5000000, "mileage_km": 46200, "availability_status": "available", "focus": "sale", "features": ["Leather seats", "Sunroof", "Navigation", "Parking sensors", "LED lights", "Cruise control", "Dual-zone AC", "Chauffeur recommended"], "description": "Occasional luxury hire, and a serious sale listing. Mineral white, kept for clients who want a quieter cabin than a standard sedan. A chauffeur is recommended. The asking price is 50,00,000 BDT — talk to the desk, do not expect an online checkout.", "images": ["https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1400&q=80", "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=1400&q=80", "https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?auto=format&fit=crop&w=1400&q=80"], "local_images": ["assets/images/cars/bmw-5series-2018-1.jpg", "assets/images/cars/bmw-5series-2018-2.jpg", "assets/images/cars/bmw-5series-2018-3.jpg"]}];</script>
+<script>
+/* Daulat Drive site behaviour.
+   REPLACE the Formspree endpoint below before going live.
+   Contact fallback: mail@gmail.com  |  Phone: +8801330132141
+   Car data: data/cars.json (fetch) with data/cars.js fallback for file:// opens. */
+(function () {
+  "use strict";
+
+  var CONFIG = {
+    /* Replace YOUR_FORM_ID with the id from https://formspree.io (form action ends in /f/xxxxxxxx). */
+    formspreeEndpoint: "https://formspree.io/f/YOUR_FORM_ID",
+    contactEmail: "mail@gmail.com",
+    phoneTel: "+8801330132141",
+    phoneDisplay: "+8801330132141",
+    office: "Daulatpur, Khulna 9202, Bangladesh",
+    driverPerDay: 1500
+  };
+
+  var I18N = {
+    en: {
+      nav_home: "Home",
+      nav_fleet: "Fleet",
+      nav_sale: "For Sale",
+      nav_about: "About",
+      nav_faq: "FAQ",
+      nav_contact: "Contact",
+      nav_book: "Book a Car",
+      hero_kicker: "Daulatpur yard · Khulna",
+      hero_title: "Reliable Car Rental & Sales — Daulatpur, Khulna",
+      hero_sub: "Daily and weekly hires from the Daulatpur yard, plus inspected cars for sale. Rates in BDT. Call to confirm a car is on the lot.",
+      search: "Search fleet",
+      view: "View Details",
+      book: "Book",
+      enquire: "Enquire to Buy",
+      call: "Call"
+    },
+    bn: {
+      nav_home: "হোম",
+      nav_fleet: "ভাড়ার গাড়ি",
+      nav_sale: "বিক্রয়",
+      nav_about: "আমাদের সম্পর্কে",
+      nav_faq: "প্রশ্নোত্তর",
+      nav_contact: "যোগাযোগ",
+      nav_book: "গাড়ি বুক করুন",
+      hero_kicker: "দৌলতপুর ইয়ার্ড · খুলনা",
+      hero_title: "নির্ভরযোগ্য গাড়ি ভাড়া ও বিক্রয় — দৌলতপুর, খুলনা",
+      hero_sub: "দৌলতপুর ইয়ার্ড থেকে দৈনিক ও সাপ্তাহিক ভাড়া, এবং যাচাই করা গাড়ি বিক্রয়। ভাড়া বাংলাদেশি টাকায়। গাড়ি আছে কিনা ফোনে নিশ্চিত করুন।",
+      search: "গাড়ি খুঁজুন",
+      view: "বিস্তারিত",
+      book: "বুক করুন",
+      enquire: "কিনতে জানুন",
+      call: "কল"
+    }
+  };
+
+  function qs(sel, root) { return (root || document).querySelector(sel); }
+  function qsa(sel, root) { return Array.prototype.slice.call((root || document).querySelectorAll(sel)); }
+
+  function formatDaily(n) {
+    return Number(n).toLocaleString("en-US") + " BDT/day";
+  }
+  function formatSale(n) {
+    var s = String(Math.round(Number(n)));
+    if (s.length <= 3) return s + " BDT";
+    var last = s.slice(-3);
+    var rest = s.slice(0, -3);
+    var parts = [];
+    while (rest.length > 2) {
+      parts.unshift(rest.slice(-2));
+      rest = rest.slice(0, -2);
+    }
+    if (rest) parts.unshift(rest);
+    return parts.join(",") + "," + last + " BDT";
+  }
+  function rentalDays(pickupDate, pickupTime, returnDate, returnTime) {
+    if (!pickupDate || !returnDate) return 0;
+    var start = new Date(pickupDate + "T" + (pickupTime || "09:00"));
+    var end = new Date(returnDate + "T" + (returnTime || "09:00"));
+    var diff = end - start;
+    if (!(diff > 0)) return 0;
+    return Math.max(1, Math.ceil(diff / 86400000));
+  }
+  function todayISO() {
+    var d = new Date();
+    var m = String(d.getMonth() + 1).padStart(2, "0");
+    var day = String(d.getDate()).padStart(2, "0");
+    return d.getFullYear() + "-" + m + "-" + day;
+  }
+  function endpointReady() {
+    return CONFIG.formspreeEndpoint && CONFIG.formspreeEndpoint.indexOf("YOUR_FORM_ID") === -1;
+  }
+
+  function loadCars() {
+    if (window.DAULAT_CARS && window.DAULAT_CARS.length) {
+      return Promise.resolve(window.DAULAT_CARS);
+    }
+    return fetch("data/cars.json", { credentials: "same-origin" })
+      .then(function (res) {
+        if (!res.ok) throw new Error("cars.json unavailable");
+        return res.json();
+      })
+      .then(function (data) {
+        return Array.isArray(data) ? data : (data.cars || []);
+      })
+      .catch(function () {
+        return window.DAULAT_CARS_FALLBACK || [];
+      });
+  }
+
+  function carBySlug(cars, slug) {
+    for (var i = 0; i < cars.length; i++) {
+      if (cars[i].slug === slug || cars[i].id === slug) return cars[i];
+    }
+    return null;
+  }
+
+  /* Header, menu, language */
+  function initChrome() {
+    var head = qs(".site-head");
+    var toggle = qs(".nav-toggle");
+    var nav = qs("#site-nav");
+    if (toggle && nav) {
+      toggle.addEventListener("click", function () {
+        var open = nav.classList.toggle("is-open");
+        toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+      qsa("#site-nav a").forEach(function (a) {
+        a.addEventListener("click", function () {
+          nav.classList.remove("is-open");
+          toggle.setAttribute("aria-expanded", "false");
+        });
+      });
+    }
+    if (head) {
+      var onScroll = function () {
+        head.classList.toggle("is-stuck", window.scrollY > 8);
+      };
+      onScroll();
+      window.addEventListener("scroll", onScroll, { passive: true });
+    }
+    qsa("[data-lang]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        applyLang(btn.getAttribute("data-lang"));
+      });
+    });
+    applyLang(localStorage.getItem("daulat-lang") || "en");
+    qsa("img[data-fallback]").forEach(function (img) {
+      img.addEventListener("error", function () {
+        if (img.getAttribute("data-fellback") === "1") return;
+        img.setAttribute("data-fellback", "1");
+        img.src = img.getAttribute("data-fallback");
+      });
+    });
+    var heroSearch = qs("#hero-search");
+    if (heroSearch && document.body.getAttribute("data-preview") === "true") {
+      heroSearch.addEventListener("submit", function (event) {
+        event.preventDefault();
+        var data = new FormData(heroSearch);
+        var fleetForm = qs('#fleet [data-filter-form]');
+        if (fleetForm && data.get("type") && fleetForm.elements.type) {
+          fleetForm.elements.type.value = data.get("type");
+          fleetForm.dispatchEvent(new Event("input", { bubbles: true }));
+        }
+        try {
+          if (data.get("location")) sessionStorage.setItem("daulat-location", data.get("location"));
+          if (data.get("pickup")) sessionStorage.setItem("daulat-pickup", data.get("pickup"));
+          if (data.get("return")) sessionStorage.setItem("daulat-return", data.get("return"));
+        } catch (err) {}
+        var fleet = qs("#fleet");
+        if (fleet) fleet.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    }
+  }
+
+  function applyLang(lang) {
+    if (!I18N[lang]) lang = "en";
+    localStorage.setItem("daulat-lang", lang);
+    document.documentElement.lang = lang === "bn" ? "bn" : "en";
+    var dict = I18N[lang];
+    qsa("[data-i18n]").forEach(function (el) {
+      var key = el.getAttribute("data-i18n");
+      if (dict[key]) el.textContent = dict[key];
+    });
+    qsa("[data-lang]").forEach(function (btn) {
+      btn.setAttribute("aria-pressed", btn.getAttribute("data-lang") === lang ? "true" : "false");
+    });
+    var extra = window.DAULAT_I18N && window.DAULAT_I18N[lang];
+    if (extra) {
+      Object.keys(extra).forEach(function (key) {
+        qsa('[data-i18n="' + key + '"]').forEach(function (el) {
+          el.textContent = extra[key];
+        });
+      });
+    }
+  }
+
+  /* Dates */
+  function initDates(root) {
+    var today = todayISO();
+    qsa('input[type="date"]', root || document).forEach(function (input) {
+      if (!input.min) input.min = today;
+      input.addEventListener("change", function () {
+        var form = input.form;
+        if (!form) return;
+        var pickup = qs('input[name="pickup"]', form);
+        var ret = qs('input[name="return"]', form);
+        if (pickup && ret && pickup.value) ret.min = pickup.value;
+      });
+    });
+  }
+
+  /* Fleet / sale filters — cards are pre-rendered; JS hides and sorts them. */
+  function initListing() {
+    qsa("[data-filter-form]").forEach(initOneListing);
+  }
+
+  function initOneListing(form) {
+    var grid = qs("[data-car-grid]", form);
+    if (!grid) return;
+    var countEl = qs("[data-result-count]", form);
+    var empty = qs("[data-empty]", form);
+    var cards = qsa(".car-card", grid);
+    var params = new URLSearchParams(window.location.search);
+
+    function val(name) {
+      var el = form ? form.elements[name] : null;
+      return el ? el.value : "";
+    }
+
+    if (form) {
+      ["type", "seats", "transmission", "fuel", "availability", "sort", "q"].forEach(function (name) {
+        if (params.get(name) && form.elements[name]) form.elements[name].value = params.get(name);
+      });
+      if (params.get("max")) {
+        var maxInput = form.elements.max;
+        if (maxInput) maxInput.value = params.get("max");
+      }
+      if (params.get("location")) {
+        try { sessionStorage.setItem("daulat-location", params.get("location")); } catch (e) {}
+      }
+      if (params.get("pickup")) {
+        try { sessionStorage.setItem("daulat-pickup", params.get("pickup")); } catch (e) {}
+      }
+      if (params.get("return")) {
+        try { sessionStorage.setItem("daulat-return", params.get("return")); } catch (e) {}
+      }
+    }
+
+    function apply() {
+      var type = val("type");
+      var seats = val("seats");
+      var transmission = val("transmission");
+      var fuel = val("fuel");
+      var availability = val("availability");
+      var q = (val("q") || "").trim().toLowerCase();
+      var max = Number(val("max") || 0);
+      var mode = grid.getAttribute("data-car-grid");
+      var sort = val("sort") || "featured";
+      var shown = [];
+
+      cards.forEach(function (card) {
+        var ok = true;
+        if (type && type !== "all") {
+          if (type === "Luxury") ok = card.getAttribute("data-segment") === "Luxury";
+          else ok = card.getAttribute("data-type") === type;
+        }
+        if (ok && seats && seats !== "all" && card.getAttribute("data-seats") !== seats) ok = false;
+        if (ok && transmission && transmission !== "all" && card.getAttribute("data-transmission") !== transmission) ok = false;
+        if (ok && fuel && fuel !== "all" && card.getAttribute("data-fuel") !== fuel) ok = false;
+        if (ok && availability === "available" && card.getAttribute("data-status") !== "available") ok = false;
+        if (ok && q) {
+          var hay = (card.getAttribute("data-name") + " " + card.getAttribute("data-type") + " " + card.getAttribute("data-year")).toLowerCase();
+          if (hay.indexOf(q) === -1) ok = false;
+        }
+        if (ok && max) {
+          var price = mode === "sale" ? Number(card.getAttribute("data-sale")) : Number(card.getAttribute("data-rate"));
+          if (price > max) ok = false;
+        }
+        card.hidden = !ok;
+        if (ok) shown.push(card);
+      });
+
+      shown.sort(function (a, b) {
+        if (sort === "price-asc") {
+          var pa = mode === "sale" ? Number(a.getAttribute("data-sale")) : Number(a.getAttribute("data-rate"));
+          var pb = mode === "sale" ? Number(b.getAttribute("data-sale")) : Number(b.getAttribute("data-rate"));
+          return pa - pb;
+        }
+        if (sort === "price-desc") {
+          var pda = mode === "sale" ? Number(a.getAttribute("data-sale")) : Number(a.getAttribute("data-rate"));
+          var pdb = mode === "sale" ? Number(b.getAttribute("data-sale")) : Number(b.getAttribute("data-rate"));
+          return pdb - pda;
+        }
+        if (sort === "year") return Number(b.getAttribute("data-year")) - Number(a.getAttribute("data-year"));
+        if (sort === "name") return a.getAttribute("data-name").localeCompare(b.getAttribute("data-name"));
+        return 0;
+      });
+      shown.forEach(function (card) { grid.appendChild(card); });
+      cards.filter(function (c) { return c.hidden; }).forEach(function (card) { grid.appendChild(card); });
+
+      if (countEl) {
+        countEl.textContent = shown.length + (shown.length === 1 ? " car" : " cars");
+      }
+      if (empty) empty.hidden = shown.length !== 0;
+      var readout = qs("[data-max-readout]", form);
+      if (readout && max) {
+        readout.textContent = mode === "sale" ? formatSale(max) : formatDaily(max);
+      }
+    }
+
+    if (form) {
+      form.addEventListener("input", apply);
+      form.addEventListener("change", apply);
+      form.addEventListener("submit", function (e) { e.preventDefault(); apply(); });
+      var reset = qs("[data-filter-reset]", form);
+      if (reset) {
+        reset.addEventListener("click", function () {
+          form.reset();
+          apply();
+        });
+      }
+    }
+    apply();
+  }
+
+  /* Booking modal + detail calculator */
+  var carsCache = [];
+
+  function fillCarSelect(select, cars, selected) {
+    if (!select) return;
+    var current = selected || select.value;
+    select.innerHTML = "";
+    cars.forEach(function (car) {
+      var opt = document.createElement("option");
+      opt.value = car.slug;
+      opt.textContent = car.year + " " + car.make + " " + car.model + " — " + formatDaily(car.rental_rate_per_day);
+      if (car.availability_status !== "available") opt.textContent += " (reserved)";
+      select.appendChild(opt);
+    });
+    if (current) select.value = current;
+  }
+
+  function updateEstimate(form) {
+    if (!form) return;
+    var out = qs("[data-estimate]", form) || qs("#booking-estimate");
+    var intent = form.getAttribute("data-intent") || (form.elements.intent && form.elements.intent.value) || "rent";
+    var slug = form.elements.car ? form.elements.car.value : form.getAttribute("data-slug");
+    var car = carBySlug(carsCache, slug);
+    var box = qs("[data-unavailable]", form.closest(".booking-box") || form.closest("dialog") || form);
+    if (!car) {
+      if (intent === "contact") return;
+      if (out) out.textContent = "Choose a car to see an estimate.";
+      return;
+    }
+    if (intent === "sale") {
+      if (out) out.innerHTML = "Asking price <strong>" + formatSale(car.sale_price) + "</strong>. Negotiation is at the Daulatpur desk, not online.";
+      if (box) box.hidden = true;
+      var submit = qs("[data-submit]", form);
+      if (submit) submit.disabled = false;
+      return;
+    }
+    var blocked = car.availability_status !== "available";
+    if (box) box.hidden = !blocked;
+    var rentBtn = qs('[data-set-intent="rent"]', form) || qs("[data-submit]", form);
+    var saleBtn = qs('[data-set-intent="sale"]', form);
+    if (rentBtn) rentBtn.disabled = blocked;
+    if (saleBtn) saleBtn.disabled = false;
+    var days = rentalDays(
+      form.elements.pickup && form.elements.pickup.value,
+      form.elements.pickup_time && form.elements.pickup_time.value,
+      form.elements["return"] && form.elements["return"].value,
+      form.elements.return_time && form.elements.return_time.value
+    );
+    var driver = form.elements.driver && form.elements.driver.checked;
+    var total = days * Number(car.rental_rate_per_day) + (driver && days ? CONFIG.driverPerDay * days : 0);
+    if (out) {
+      if (!days) {
+        out.textContent = "Daily rate " + formatDaily(car.rental_rate_per_day) + ". Choose pickup and return to estimate.";
+      } else {
+        out.innerHTML = days + " day" + (days > 1 ? "s" : "") + " × " + formatDaily(car.rental_rate_per_day) +
+          (driver ? " + driver " + formatDaily(CONFIG.driverPerDay) : "") +
+          " = <strong>" + Number(total).toLocaleString("en-US") + " BDT</strong>";
+      }
+    }
+  }
+
+  function showErrors(form, messages) {
+    var list = qs("[data-errors]", form);
+    if (!list) return;
+    list.innerHTML = "";
+    messages.forEach(function (msg) {
+      var li = document.createElement("li");
+      li.textContent = msg;
+      list.appendChild(li);
+    });
+    if (messages.length) list.focus && list.setAttribute("tabindex", "-1");
+  }
+
+  function validate(form) {
+    var errors = [];
+    var intent = (form.elements.intent && form.elements.intent.value) || form.getAttribute("data-intent") || "rent";
+    var required = ["name", "email", "phone"];
+    if (intent !== "contact") required.push("pickup_location");
+    if (intent !== "contact") required.push("car");
+    required.forEach(function (name) {
+      var el = form.elements[name];
+      if (el && !String(el.value || "").trim()) errors.push("Please fill in " + (el.labels && el.labels[0] ? el.labels[0].textContent : name) + ".");
+    });
+    var email = form.elements.email && form.elements.email.value;
+    if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) errors.push("Enter a valid email address.");
+    var phone = form.elements.phone && form.elements.phone.value;
+    if (phone && phone.replace(/\D/g, "").length < 10) errors.push("Enter a phone number we can call back.");
+    if (intent === "rent") {
+      if (form.elements.pickup && !form.elements.pickup.value) errors.push("Choose a pickup date.");
+      if (form.elements["return"] && !form.elements["return"].value) errors.push("Choose a return date.");
+      var days = rentalDays(
+        form.elements.pickup && form.elements.pickup.value,
+        form.elements.pickup_time && form.elements.pickup_time.value,
+        form.elements["return"] && form.elements["return"].value,
+        form.elements.return_time && form.elements.return_time.value
+      );
+      if (form.elements.pickup && form.elements.pickup.value && form.elements["return"] && form.elements["return"].value && days < 1) {
+        errors.push("Return must be after pickup.");
+      }
+      var slug = form.elements.car ? form.elements.car.value : form.getAttribute("data-slug");
+      var car = carBySlug(carsCache, slug);
+      if (car && car.availability_status !== "available") {
+        errors.push("This car is reserved and cannot be booked for rental. Call " + CONFIG.phoneDisplay + " to join the waitlist, or send a sale enquiry.");
+      }
+    }
+    return errors;
+  }
+
+  function payloadFrom(form) {
+    var data = {};
+    Array.prototype.forEach.call(form.elements, function (el) {
+      if (!el.name || el.disabled) return;
+      if (el.type === "checkbox") data[el.name] = el.checked;
+      else data[el.name] = el.value;
+    });
+    var slug = data.car || form.getAttribute("data-slug");
+    var car = carBySlug(carsCache, slug);
+    var intent = data.intent || form.getAttribute("data-intent") || "rent";
+    var days = rentalDays(data.pickup, data.pickup_time, data["return"], data.return_time);
+    var total = 0;
+    if (car && intent !== "sale") {
+      total = days * Number(car.rental_rate_per_day);
+      if (data.driver) total += CONFIG.driverPerDay * days;
+    }
+    data.intent = intent;
+    data.car_name = car ? (car.year + " " + car.make + " " + car.model) : slug;
+    data.days = days;
+    data.estimated_total_bdt = total;
+    data.sale_price_bdt = car ? car.sale_price : null;
+    data.currency = "BDT";
+    data.office = CONFIG.office;
+    data.submitted_from = location.pathname;
+    return data;
+  }
+
+  function mailtoFallback(data) {
+    var lines = [
+      "Daulat Drive request",
+      "Type: " + data.intent,
+      "Name: " + data.name,
+      "Email: " + data.email,
+      "Phone: " + data.phone,
+      "Car: " + (data.car_name || data.car),
+      "Pickup location: " + (data.pickup_location || ""),
+      "Pickup: " + (data.pickup || "") + " " + (data.pickup_time || ""),
+      "Return: " + (data["return"] || "") + " " + (data.return_time || ""),
+      "Days: " + data.days,
+      "Estimated total: " + data.estimated_total_bdt + " BDT",
+      "Driver: " + (data.driver ? "yes" : "no"),
+      "Message: " + (data.message || "")
+    ];
+    var subject = (data.intent === "sale" ? "Purchase enquiry: " : "Reservation request: ") + (data.car_name || "car");
+    var href = "mailto:" + CONFIG.contactEmail + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(lines.join("\n"));
+    var a = document.createElement("a");
+    a.href = href;
+    a.style.display = "none";
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+  }
+
+  function goConfirm() {
+    window.location.href = "booking-confirmation.html";
+  }
+
+  function bindForm(form) {
+    if (!form || form.getAttribute("data-bound") === "1") return;
+    form.setAttribute("data-bound", "1");
+    qsa("[data-set-intent]", form).forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var intent = btn.getAttribute("data-set-intent") || "rent";
+        if (form.elements.intent) form.elements.intent.value = intent;
+        form.setAttribute("data-intent", intent);
+        updateEstimate(form);
+      });
+    });
+    form.addEventListener("input", function () { updateEstimate(form); });
+    form.addEventListener("change", function () { updateEstimate(form); });
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+      var errors = validate(form);
+      showErrors(form, errors);
+      if (errors.length) return;
+      var data = payloadFrom(form);
+      try { sessionStorage.setItem("daulat-confirmation", JSON.stringify(data)); } catch (e) {}
+      var submit = qs("[data-submit]", form) || qs('button[type="submit"]', form);
+      if (submit) submit.disabled = true;
+      if (!endpointReady()) {
+        mailtoFallback(data);
+        window.setTimeout(goConfirm, 400);
+        return;
+      }
+      fetch(CONFIG.formspreeEndpoint, {
+        method: "POST",
+        headers: { "Accept": "application/json", "Content-Type": "application/json" },
+        body: JSON.stringify(data)
+      }).then(function (res) {
+        if (!res.ok) throw new Error("Endpoint rejected the form");
+        goConfirm();
+      }).catch(function () {
+        mailtoFallback(data);
+        window.setTimeout(goConfirm, 400);
+      });
+    });
+    updateEstimate(form);
+  }
+
+  function openModal(slug, intent) {
+    var dialog = qs("#booking-modal");
+    if (!dialog) {
+      window.location.href = "contact.html";
+      return;
+    }
+    var form = qs("#booking-form", dialog);
+    if (form.elements.intent) form.elements.intent.value = intent || "rent";
+    form.setAttribute("data-intent", intent || "rent");
+    if (slug && form.elements.car) form.elements.car.value = slug;
+    try {
+      var loc = sessionStorage.getItem("daulat-location");
+      var pickup = sessionStorage.getItem("daulat-pickup");
+      var ret = sessionStorage.getItem("daulat-return");
+      if (loc && form.elements.pickup_location && !form.elements.pickup_location.value) form.elements.pickup_location.value = loc;
+      if (pickup && form.elements.pickup && !form.elements.pickup.value) form.elements.pickup.value = pickup;
+      if (ret && form.elements["return"] && !form.elements["return"].value) form.elements["return"].value = ret;
+    } catch (e) {}
+    var title = qs("#booking-title");
+    if (title) title.textContent = intent === "sale" ? "Enquire to buy" : "Request a reservation";
+    qsa("[data-rent-only]", form).forEach(function (el) { el.hidden = intent === "sale"; });
+    updateEstimate(form);
+    if (typeof dialog.showModal === "function") dialog.showModal();
+    else dialog.setAttribute("open", "");
+    var first = qs("input[name='name']", form);
+    if (first) first.focus();
+  }
+
+  function initBooking() {
+    var dialog = qs("#booking-modal");
+    var form = dialog ? qs("#booking-form", dialog) : null;
+    if (form) {
+      fillCarSelect(form.elements.car, carsCache);
+      bindForm(form);
+      initDates(form);
+    }
+    qsa("[data-open-booking]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        openModal(btn.getAttribute("data-slug") || "", btn.getAttribute("data-intent") || "rent");
+      });
+    });
+    qsa("[data-close-modal]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        if (dialog && dialog.close) dialog.close();
+        else if (dialog) dialog.removeAttribute("open");
+      });
+    });
+    if (dialog) {
+      dialog.addEventListener("click", function (e) {
+        if (e.target === dialog && dialog.close) dialog.close();
+      });
+    }
+    qsa("form[data-booking-form]").forEach(function (inline) {
+      bindForm(inline);
+      initDates(inline);
+    });
+  }
+
+  function initGallery() {
+    qsa("[data-gallery]").forEach(function (gallery) {
+      var main = qs("[data-gallery-main]", gallery);
+      var thumbs = qsa("[data-thumb]", gallery);
+      var prev = qs("[data-prev]", gallery);
+      var next = qs("[data-next]", gallery);
+      if (!main || !thumbs.length) return;
+      var index = 0;
+      function show(i) {
+        index = (i + thumbs.length) % thumbs.length;
+        var src = thumbs[index].getAttribute("data-full") || thumbs[index].querySelector("img").src;
+        var alt = thumbs[index].getAttribute("data-alt") || "";
+        main.src = src;
+        main.alt = alt;
+        thumbs.forEach(function (t, n) { t.setAttribute("aria-current", n === index ? "true" : "false"); });
+      }
+      thumbs.forEach(function (t, n) {
+        t.addEventListener("click", function () { show(n); });
+      });
+      if (prev) prev.addEventListener("click", function () { show(index - 1); });
+      if (next) next.addEventListener("click", function () { show(index + 1); });
+      gallery.addEventListener("keydown", function (e) {
+        if (e.key === "ArrowLeft") show(index - 1);
+        if (e.key === "ArrowRight") show(index + 1);
+      });
+    });
+  }
+
+  function initAdmin() {
+    var body = qs("[data-admin-body]");
+    if (!body) return;
+    var rows = window.DAULAT_BOOKINGS || [];
+    body.innerHTML = rows.map(function (row) {
+      return "<tr><td>" + row.id + "</td><td>" + row.name + "</td><td>" + row.car + "</td><td>" + row.when + "</td><td>" + row.total + "</td><td>" + row.status + "</td></tr>";
+    }).join("");
+  }
+
+  function initConfirmation() {
+    var root = qs("[data-confirmation]");
+    if (!root) return;
+    var raw = null;
+    try { raw = sessionStorage.getItem("daulat-confirmation"); } catch (e) {}
+    if (!raw) return;
+    var data = {};
+    try { data = JSON.parse(raw); } catch (e) { return; }
+    var map = {
+      name: data.name,
+      email: data.email,
+      phone: data.phone,
+      car: data.car_name || data.car,
+      location: data.pickup_location,
+      when: data.intent === "sale" ? "Sale enquiry" : ((data.pickup || "") + " " + (data.pickup_time || "") + " → " + (data["return"] || "") + " " + (data.return_time || "")),
+      total: data.intent === "sale"
+        ? (data.sale_price_bdt ? formatSale(data.sale_price_bdt) + " asking" : "Asking price at desk")
+        : (data.estimated_total_bdt ? Number(data.estimated_total_bdt).toLocaleString("en-US") + " BDT estimated" : "—")
+    };
+    Object.keys(map).forEach(function (key) {
+      var el = qs('[data-confirm="' + key + '"]');
+      if (el && map[key]) el.textContent = map[key];
+    });
+    var lead = qs("[data-confirm-lead]");
+    if (lead) {
+      if (data.intent === "sale") lead.textContent = "Your purchase enquiry is ready. We will reply from the Daulatpur desk.";
+      else if (data.intent === "contact") lead.textContent = "Your message is ready. The Daulatpur desk will reply by phone or email.";
+      else lead.textContent = "Your reservation request is ready. This is not a confirmed booking until the desk calls you.";
+    }
+  }
+
+  function initPreviewDetail() {
+    var panel = qs("#preview-detail");
+    if (!panel) return;
+    function render(slug) {
+      var car = carBySlug(carsCache, slug);
+      if (!car) return;
+      panel.hidden = false;
+      var img = (car.local_images && car.local_images[0]) || (car.images && car.images[0]) || "";
+      panel.innerHTML =
+        '<p class="crumbs"><a href="#fleet">Fleet</a> / ' + car.make + " " + car.model + "</p>" +
+        "<h2>" + car.year + " " + car.make + " " + car.model + "</h2>" +
+        '<img src="' + img + '" alt="' + car.year + " " + car.make + " " + car.model + '" style="width:100%;border-radius:16px;background:#f3f4f6">' +
+        "<p>" + car.description + "</p>" +
+        "<p><strong>" + formatDaily(car.rental_rate_per_day) + "</strong> · Sale " + formatSale(car.sale_price) + "</p>" +
+        "<p>" + car.seats + " seats · " + car.transmission + " · " + car.fuel + " · " + Number(car.mileage_km).toLocaleString("en-US") + " km</p>" +
+        '<p><button class="btn btn-primary" type="button" data-open-booking data-slug="' + car.slug + '" data-intent="rent">Book this car</button> ' +
+        '<button class="btn btn-accent" type="button" data-open-booking data-slug="' + car.slug + '" data-intent="sale">Enquire to Buy</button></p>';
+      qsa("[data-open-booking]", panel).forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          openModal(btn.getAttribute("data-slug"), btn.getAttribute("data-intent"));
+        });
+      });
+      panel.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+    qsa("[data-preview-detail]").forEach(function (a) {
+      a.addEventListener("click", function (e) {
+        e.preventDefault();
+        render(a.getAttribute("data-preview-detail"));
+      });
+    });
+    if (location.hash.indexOf("#car-") === 0) render(location.hash.slice(5));
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    initChrome();
+    initDates(document);
+    initGallery();
+    initConfirmation();
+    loadCars().then(function (cars) {
+      carsCache = cars || [];
+      initListing();
+      initBooking();
+      initPreviewDetail();
+      initAdmin();
+    });
+  });
+
+  window.DaulatDrive = {
+    formatDaily: formatDaily,
+    formatSale: formatSale,
+    rentalDays: rentalDays,
+    CONFIG: CONFIG
+  };
+})();
+
+</script>
+</body>
+</html>
