@@ -18,7 +18,7 @@ async function session(request: NextRequest) {
 export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
   const isAdmin = pathname.startsWith("/admin");
-  const isApi = pathname.startsWith("/api/") && !pathname.startsWith("/api/auth/login") && !pathname.startsWith("/api/gsc-file");
+  const isApi = pathname.startsWith("/api/") && !pathname.startsWith("/api/auth/login") && !pathname.startsWith("/api/gsc-file") && !pathname.startsWith("/api/public");
   if (!isAdmin && !isApi) return NextResponse.next();
 
   const user = await session(request);

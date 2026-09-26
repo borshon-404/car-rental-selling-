@@ -4,6 +4,9 @@ import { requireUser } from "@/lib/auth";
 
 const links = [
   ["Dashboard", "/admin"],
+  ["Fleet", "/admin/cars"],
+  ["Requests", "/admin/bookings"],
+  ["Public site", "/"],
   ["Pages", "/admin/content/pages"],
   ["Posts", "/admin/content/posts"],
   ["Products", "/admin/content/products"],

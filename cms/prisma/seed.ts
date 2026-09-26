@@ -1,3 +1,5 @@
+import { readFileSync } from "fs";
+import path from "path";
 import { PrismaClient } from "@prisma/client";
 import { hash } from "bcryptjs";
 
@@ -139,6 +141,42 @@ async function main() {
       seoDescription: "Sample portfolio item.",
     },
   });
+
+  const carsPath = path.join(__dirname, "../public/data/cars.json");
+  try {
+    const cars = JSON.parse(readFileSync(carsPath, "utf8")) as Array<Record<string, unknown>>;
+    for (const car of cars) {
+      const slug = String(car.slug || car.id);
+      const images = Array.isArray(car.local_images) ? car.local_images.map(String) : [];
+      const data = {
+        make: String(car.make || ""),
+        model: String(car.model || ""),
+        year: Number(car.year || 0),
+        type: String(car.type || "Sedan"),
+        segment: String(car.segment || ""),
+        seats: Number(car.seats || 5),
+        transmission: String(car.transmission || ""),
+        fuel: String(car.fuel || ""),
+        engine: String(car.engine || ""),
+        color: String(car.color || ""),
+        luggage: String(car.luggage || ""),
+        rentalRate: Number(car.rental_rate_per_day || 0),
+        salePrice: Number(car.sale_price || 0),
+        mileageKm: Number(car.mileage_km || 0),
+        availability: String(car.availability_status || "available"),
+        focus: String(car.focus || "rental"),
+        features: JSON.stringify(car.features || []),
+        description: String(car.description || ""),
+        image: images[0] || "",
+        images: JSON.stringify(images),
+        published: true,
+      };
+      await prisma.car.upsert({ where: { slug }, update: {}, create: { slug, ...data } });
+    }
+    console.log(`Fleet seed checked ${cars.length} cars. Existing cars were left unchanged.`);
+  } catch (error) {
+    console.log("Car seed skipped.", error instanceof Error ? error.message : error);
+  }
 
   console.log("Seed finished.");
 }

@@ -2,6 +2,8 @@
 
 const links = [
   ["Dashboard", "/admin"],
+  ["Fleet", "/admin/cars"],
+  ["Requests", "/admin/bookings"],
   ["Pages", "/admin/content/pages"],
   ["Posts", "/admin/content/posts"],
   ["Products", "/admin/content/products"],

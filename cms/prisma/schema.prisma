@@ -145,6 +145,56 @@ model Setting {
   updatedAt DateTime @updatedAt
 }
 
+model Car {
+  id            String   @id @default(cuid())
+  slug          String   @unique
+  make          String
+  model         String
+  year          Int
+  type          String
+  segment       String   @default("")
+  seats         Int      @default(5)
+  transmission  String   @default("Automatic")
+  fuel          String   @default("Petrol")
+  engine        String   @default("")
+  color         String   @default("")
+  luggage       String   @default("")
+  rentalRate    Int      @default(0)
+  salePrice     Int      @default(0)
+  mileageKm     Int      @default(0)
+  availability  String   @default("available")
+  focus         String   @default("rental")
+  features      String   @default("[]")
+  description   String   @default("")
+  image         String   @default("")
+  images        String   @default("[]")
+  published     Boolean  @default(true)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+model Booking {
+  id              String   @id @default(cuid())
+  intent          String   @default("rent")
+  name            String
+  email           String
+  phone           String
+  carSlug         String   @default("")
+  carName         String   @default("")
+  pickupLocation  String   @default("")
+  pickupDate      String   @default("")
+  pickupTime      String   @default("")
+  returnDate      String   @default("")
+  returnTime      String   @default("")
+  days            Int      @default(0)
+  driver          Boolean  @default(false)
+  estimatedTotal  Int      @default(0)
+  message         String   @default("")
+  status          String   @default("new")
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
 model Revision {
   id         String   @id @default(cuid())
   entityType String
